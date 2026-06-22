@@ -270,9 +270,8 @@
     }
 
     /* Detail block for syllabus families */
-    .syllabus-details-box {
+    details.syllabus-details-box {
         margin-top: 4px;
-        padding: 3px 5px;
         background-color: #fffaf0;
         border-left: 2.5px solid #f1c40f;
         border-radius: 2px;
@@ -281,7 +280,14 @@
         color: #5d4037;
     }
     
-    .syllabus-details-box strong {
+    details.syllabus-details-box summary {
+        padding: 3px 5px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+    }
+    
+    details.syllabus-details-box strong {
         color: #795548;
         text-transform: uppercase;
         font-size: 8px;
@@ -367,7 +373,7 @@
     <div class="header-main">
         <h1>Bentham and Hooker's Classification System</h1>
         <div style="font-size: 11px; font-weight: 600; color: #dfe4ea; letter-spacing: 0.5px; margin-top: 2px;">
-            Complete Tree of 201 Families | Highlighted Syllabus Families (★) with Diagnostic Descriptions
+            Complete Tree of 201 Families | Highlighted Syllabus Families (★) with Diagnostic Descriptions (Collapsible)
         </div>
     </div>
     
@@ -429,18 +435,22 @@
                                             8. NYMPHAEACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>1. RANUNCULACEAE</strong> &mdash; Herbs, opposite/alternate leaves. Flowers bisexual, actinomorphic, sepals and petals free, stamens numerous and spirally arranged.
-                                    </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>4. MAGNOLIACEAE</strong> &mdash; Aromatic trees/shrubs. Alternate simple leaves with stipules. Flowers large, showy, perianth spirally arranged, stamens and carpels numerous.
-                                    </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>6. MENISPERMACEAE</strong> &mdash; Dioecious climbing shrubs. Palmate leaves. Flowers small, unisexual, trimerous. Seed hooked or curved (drupe).
-                                    </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>8. NYMPHAEACEAE</strong> &mdash; Aquatic perennial herbs. Large floating peltate leaves. Flowers large, showy, solitary on long peduncles, numerous petals and stamens.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>1. RANUNCULACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs, opposite/alternate leaves. Flowers bisexual, actinomorphic, sepals and petals free, stamens numerous and spirally arranged.</div>
+                                    </details>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>4. MAGNOLIACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Aromatic trees/shrubs. Alternate simple leaves with stipules. Flowers large, showy, perianth spirally arranged, stamens and carpels numerous.</div>
+                                    </details>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>6. MENISPERMACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Dioecious climbing shrubs. Palmate leaves. Flowers small, unisexual, trimerous. Seed hooked or curved (drupe).</div>
+                                    </details>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>8. NYMPHAEACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Aquatic perennial herbs. Large floating peltate leaves. Flowers large, showy, solitary on long peduncles, numerous petals and stamens.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #16a085;">
                                     <div class="order-header-row">
@@ -500,9 +510,10 @@
                                             21. VOCHYSIACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>20. POLYGALAE</strong> &mdash; Herbs or shrubs, exstipulate leaves. Flowers zygomorphic, papilionaceous-like, 5 sepals (2 large petaloid wings), 8 stamens fused in a split tube.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>20. POLYGALAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs or shrubs, exstipulate leaves. Flowers zygomorphic, papilionaceous-like, 5 sepals (2 large petaloid wings), 8 stamens fused in a split tube.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #2980b9;">
                                     <div class="order-header-row">
@@ -525,9 +536,10 @@
                                             25. TAMARISCINEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>23. CARYOPHYLLEAE</strong> &mdash; Herbs with swollen nodes, opposite entire leaves. Flowers in cymes, 5 clawed petals, 10 stamens, free central placentation.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>23. CARYOPHYLLEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs with swollen nodes, opposite entire leaves. Flowers in cymes, 5 clawed petals, 10 stamens, free central placentation.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #e67e22;">
                                     <div class="order-header-row">
@@ -556,9 +568,10 @@
                                             31. CHLENACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>28. GUTTIFERAE</strong> &mdash; Trees or shrubs with resinous sap, opposite entire leaves. Flowers actinomorphic, stamens numerous and clustered in bundles (polyadelphous).
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>28. GUTTIFERAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Trees or shrubs with resinous sap, opposite entire leaves. Flowers actinomorphic, stamens numerous and clustered in bundles (polyadelphous).</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #f1c40f;">
                                     <div class="order-header-row">
@@ -578,9 +591,10 @@
                                             34. TILIACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>33. STERCULIACEAE</strong> &mdash; Herbs/trees with stellate hairs, alternate stipulate leaves. Flowers bisexual/unisexual, stamens fused in a monadelphous tube, anthers 2-loculed.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>33. STERCULIACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs/trees with stellate hairs, alternate stipulate leaves. Flowers bisexual/unisexual, stamens fused in a monadelphous tube, anthers 2-loculed.</div>
+                                    </details>
                                 </div>
                             </div>
                         </div>
@@ -630,9 +644,10 @@
                                             45. CHAILLETIACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>44. MELIACEAE</strong> &mdash; Woody plants, mostly trees, pinnate exstipulate leaves. Flowers in panicles, stamens fused into a characteristic staminal tube.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>44. MELIACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Woody plants, mostly trees, pinnate exstipulate leaves. Flowers in panicles, stamens fused into a characteristic staminal tube.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #1abc9c;">
                                     <div class="order-header-row">
@@ -690,9 +705,10 @@
                                             54. ANACARDIACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>52. SAPINDACEAE</strong> &mdash; Trees/shrubs, compound leaves. Flowers small, unisexual, disc present. Fruit often lobed or winged, seeds with aril.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>52. SAPINDACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Trees/shrubs, compound leaves. Flowers small, unisexual, disc present. Fruit often lobed or winged, seeds with aril.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #7f8c8d;">
                                     <div class="order-header-row">
@@ -752,9 +768,10 @@
                                             65. HALORAGEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>59. ROSACEAE</strong> &mdash; Herbs/shrubs/trees, stipulate leaves. Flowers actinomorphic, perigynous, hypanthium present, stamens numerous, apocarpous/syncarpous.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>59. ROSACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs/shrubs/trees, stipulate leaves. Flowers actinomorphic, perigynous, hypanthium present, stamens numerous, apocarpous/syncarpous.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #c0392b;">
                                     <div class="order-header-row">
@@ -783,12 +800,14 @@
                                             71. ONAGRARIEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>66. RHIZOPHOREAE</strong> &mdash; Mangrove trees with stilt roots and viviparous germination. Opposite stipulate leaves. Flowers bisexual, inferior ovary.
-                                    </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>69. MELASTOMACEAE</strong> &mdash; Herbs/shrubs with opposite 3-9 palmately veined leaves. Stamens with characteristic curved connective and poricidal dehiscing anthers.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>66. RHIZOPHOREAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Mangrove trees with stilt roots and viviparous germination. Opposite stipulate leaves. Flowers bisexual, inferior ovary.</div>
+                                    </details>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>69. MELASTOMACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs/shrubs with opposite 3-9 palmately veined leaves. Stamens with characteristic curved connective and poricidal dehiscing anthers.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #8e44ad;">
                                     <div class="order-header-row">
@@ -836,9 +855,10 @@
                                             80. FICIOIDEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>80. FICIOIDEAE</strong> &mdash; Succulent herbs/shrubs. Leaves opposite or alternate. Flowers regular, petals absent or represented by petaloid staminodes, parietal/axile placentation.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>80. FICIOIDEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Succulent herbs/shrubs. Leaves opposite or alternate. Flowers regular, petals absent or represented by petaloid staminodes, parietal/axile placentation.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #2980b9;">
                                     <div class="order-header-row">
@@ -890,9 +910,10 @@
                                             85. RUBIACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>85. RUBIACEAE</strong> &mdash; Trees/shrubs/herbs, opposite entire leaves with interpetiolar stipules. Flowers actinomorphic, sympetalous, inferior ovary.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>85. RUBIACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Trees/shrubs/herbs, opposite entire leaves with interpetiolar stipules. Flowers actinomorphic, sympetalous, inferior ovary.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #16a085;">
                                     <div class="order-header-row">
@@ -1006,9 +1027,10 @@
                                             104. STYRACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>102. SAPOTACEAE</strong> &mdash; Trees or shrubs with milky latex. Leaves alternate, entire. Flowers actinomorphic, sympetalous, stamens in whorls, ovary superior.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>102. SAPOTACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Trees or shrubs with milky latex. Leaves alternate, entire. Flowers actinomorphic, sympetalous, stamens in whorls, ovary superior.</div>
+                                    </details>
                                 </div>
                             </div>
                         </div>
@@ -1043,9 +1065,10 @@
                                             110. GENTIANEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>110. GENTIANEAE</strong> &mdash; Herbs, opposite entire leaves. Flowers actinomorphic, sympetalous, ovary superior, unilocular with parietal placentation.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>110. GENTIANEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs, opposite entire leaves. Flowers actinomorphic, sympetalous, ovary superior, unilocular with parietal placentation.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #e67e22;">
                                     <div class="order-header-row">
@@ -1071,12 +1094,14 @@
                                             115. SOLANACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>113. BORAGINEAE</strong> &mdash; Hispid herbs with scorpioid cymes. Flowers regular, sympetalous, ovary deeply 4-lobed, style gynobasic.
-                                    </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>114. CONVOLVULACEAE</strong> &mdash; Twining herbs/shrubs, alternate leaves. Flowers funnel-shaped, sympetalous, ovary superior and bicarpellate.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>113. BORAGINEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Hispid herbs with scorpioid cymes. Flowers regular, sympetalous, ovary deeply 4-lobed, style gynobasic.</div>
+                                    </details>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>114. CONVOLVULACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Twining herbs/shrubs, alternate leaves. Flowers funnel-shaped, sympetalous, ovary superior and bicarpellate.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #d35400;">
                                     <div class="order-header-row">
@@ -1111,12 +1136,14 @@
                                             123. ACANTHACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>116. SCROPHULARINEAE</strong> &mdash; Herbs/shrubs, flowers zygomorphic, bilabiate, stamens 4 (didynamous) or 2, ovary superior, axile placentation with numerous ovules.
-                                    </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>122. PEDALINEAE</strong> &mdash; Sticky herbs with glandular hairs. Flowers zygomorphic, solitary. Fruit a capsule or nut with hooks or horns, axile placentation.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>116. SCROPHULARINEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs/shrubs, flowers zygomorphic, bilabiate, stamens 4 (didynamous) or 2, ovary superior, axile placentation with numerous ovules.</div>
+                                    </details>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>122. PEDALINEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Sticky herbs with glandular hairs. Flowers zygomorphic, solitary. Fruit a capsule or nut with hooks or horns, axile placentation.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #8e44ad;">
                                     <div class="order-header-row">
@@ -1139,9 +1166,10 @@
                                             127. LABIATAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>126. VERBENACEAE</strong> &mdash; Stems quadrangular, opposite leaves. Flowers zygomorphic, in spikes/cymes, style terminal, ovary 2-4 celled, drupe fruit.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>126. VERBENACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Stems quadrangular, opposite leaves. Flowers zygomorphic, in spikes/cymes, style terminal, ovary 2-4 celled, drupe fruit.</div>
+                                    </details>
                                 </div>
                                 <div class="order-row" style="border-left: 3px solid #7f8c8d;">
                                     <div class="order-header-row">
@@ -1202,9 +1230,10 @@
                                             135. POLYGONACEAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>129. NYCTAGINEAE</strong> &mdash; Herbs/shrubs with opposite leaves. Flowers small, often surrounded by brightly colored bracts, perianth tubular (tepals), 1-seeded anthocarp fruit.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>129. NYCTAGINEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs/shrubs with opposite leaves. Flowers small, often surrounded by brightly colored bracts, perianth tubular (tepals), 1-seeded anthocarp fruit.</div>
+                                    </details>
                                 </div>
                             </div>
                         </div>
@@ -1376,15 +1405,18 @@
                                             160. CUPULIFERAE
                                         </span>
                                     </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>152. EUPHORBIACEAE</strong> &mdash; Plants with milky latex, flowers unisexual, perianth reduced or absent. Tricarpellate syncarpous ovary, schizocarpic regma fruit.
-                                    </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>154. URTICACEAE</strong> &mdash; Herbs/shrubs with stinging hairs or cystoliths. Flowers tiny, unisexual, green. Stamens infolded in bud, ovary unilocular.
-                                    </div>
-                                    <div class="syllabus-details-box">
-                                        <strong>159. CASUARINEAE</strong> &mdash; Jointed xerophytic trees with scale leaves. Flowers unisexual, males in spikes, females in heads forming a woody cone-like infructescence.
-                                    </div>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>152. EUPHORBIACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Plants with milky latex, flowers unisexual, perianth reduced or absent. Tricarpellate syncarpous ovary, schizocarpic regma fruit.</div>
+                                    </details>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>154. URTICACEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Herbs/shrubs with stinging hairs or cystoliths. Flowers tiny, unisexual, green. Stamens infolded in bud, ovary unilocular.</div>
+                                    </details>
+                                    <details class="syllabus-details-box">
+                                        <summary><strong>159. CASUARINEAE</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Jointed xerophytic trees with scale leaves. Flowers unisexual, males in spikes, females in heads forming a woody cone-like infructescence.</div>
+                                    </details>
                                 </div>
                             </div>
                         </div>
@@ -1432,19 +1464,19 @@
                     <div class="gymno-title" style="background-color: #3498db;">
                         165. GNETACEAE
                     </div>
-                    <div class="syllabus-details-box" style="border-left-color: #3498db; margin-top:3px; background-color:#fcfcfc;">Vessels present in xylem. Leaves opposite, broad or scale-like. Cones compound with outer envelope.</div>
+                    <details class="syllabus-details-box" style="border-left-color: #3498db; margin-top:3px; background-color:#fcfcfc;"><summary><strong>DIAGNOSTIC CHARACTERS</strong></summary><div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Vessels present in xylem. Leaves opposite, broad or scale-like. Cones compound with outer envelope.</div></details>
                 </div>
                 <div class="gymno-card" style="border-left: 3px solid #2ecc71;">
                     <div class="gymno-title" style="background-color: #2ecc71;">
                         166. CONIFERAE
                     </div>
-                    <div class="syllabus-details-box" style="border-left-color: #2ecc71; margin-top:3px; background-color:#fcfcfc;">Wood without vessels, resin ducts present. Needles/scale leaves. Unisexual cones, seeds winged or fleshy.</div>
+                    <details class="syllabus-details-box" style="border-left-color: #2ecc71; margin-top:3px; background-color:#fcfcfc;"><summary><strong>DIAGNOSTIC CHARACTERS</strong></summary><div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Wood without vessels, resin ducts present. Needles/scale leaves. Unisexual cones, seeds winged or fleshy.</div></details>
                 </div>
                 <div class="gymno-card" style="border-left: 3px solid #e74c3c;">
                     <div class="gymno-title" style="background-color: #e74c3c;">
                         167. CYCADACEAE
                     </div>
-                    <div class="syllabus-details-box" style="border-left-color: #e74c3c; margin-top:3px; background-color:#fcfcfc;">Wood without vessels. Palm-like unbranched trunk, pinnate compound leaves. Large terminal cones.</div>
+                    <details class="syllabus-details-box" style="border-left-color: #e74c3c; margin-top:3px; background-color:#fcfcfc;"><summary><strong>DIAGNOSTIC CHARACTERS</strong></summary><div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">Wood without vessels. Palm-like unbranched trunk, pinnate compound leaves. Large terminal cones.</div></details>
                 </div>
             </div>
         </div>

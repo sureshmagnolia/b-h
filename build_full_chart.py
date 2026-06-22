@@ -351,9 +351,8 @@ def generate_chart():
     }
 
     /* Detail block for syllabus families */
-    .syllabus-details-box {
+    details.syllabus-details-box {
         margin-top: 4px;
-        padding: 3px 5px;
         background-color: #fffaf0;
         border-left: 2.5px solid #f1c40f;
         border-radius: 2px;
@@ -362,7 +361,14 @@ def generate_chart():
         color: #5d4037;
     }
     
-    .syllabus-details-box strong {
+    details.syllabus-details-box summary {
+        padding: 3px 5px;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+    }
+    
+    details.syllabus-details-box strong {
         color: #795548;
         text-transform: uppercase;
         font-size: 8px;
@@ -448,7 +454,7 @@ def generate_chart():
     <div class="header-main">
         <h1>Bentham and Hooker's Classification System</h1>
         <div style="font-size: 11px; font-weight: 600; color: #dfe4ea; letter-spacing: 0.5px; margin-top: 2px;">
-            Complete Tree of 201 Families | Highlighted Syllabus Families (★) with Diagnostic Descriptions
+            Complete Tree of 201 Families | Highlighted Syllabus Families (★) with Diagnostic Descriptions (Collapsible)
         </div>
     </div>
     
@@ -662,9 +668,10 @@ def generate_chart():
 """
                 # Render syllabus detailed boxes below the pills
                 for num, fam_name, desc in syllabus_details:
-                    html += f"""                                    <div class="syllabus-details-box">
-                                        <strong>{num}. {fam_name}</strong> &mdash; {desc}
-                                    </div>
+                    html += f"""                                    <details class="syllabus-details-box">
+                                        <summary><strong>{num}. {fam_name}</strong></summary>
+                                        <div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">{desc}</div>
+                                    </details>
 """
                 
                 html += """                                </div>
@@ -707,7 +714,7 @@ def generate_chart():
                     <div class="gymno-title" style="background-color: {col};">
                         {family_counter}. {fam}
                     </div>
-                    {f'<div class="syllabus-details-box" style="border-left-color: {col}; margin-top:3px; background-color:#fcfcfc;">{desc}</div>' if desc else ''}
+                    {f'<details class="syllabus-details-box" style="border-left-color: {col}; margin-top:3px; background-color:#fcfcfc;"><summary><strong>DIAGNOSTIC CHARACTERS</strong></summary><div style="padding: 2px 4px 4px 4px; border-top: 1px dashed #f5deb3; margin-top: 2px;">{desc}</div></details>' if desc else ''}
                 </div>
 """
 
