@@ -341,6 +341,56 @@ def build_html():
         background-color: #ffffff;
     }
 
+    @media screen and (max-width: 1024px) {
+        .main-container {
+            margin: 0;
+            border-radius: 0;
+            max-width: 100%;
+        }
+        .grid-container {
+            grid-template-columns: 1fr !important;
+            gap: 12px;
+            padding: 8px;
+        }
+        .dicot-content {
+            grid-template-columns: 1fr !important;
+            gap: 10px;
+            padding: 6px;
+        }
+        .series-block {
+            flex-direction: column;
+        }
+        .series-left {
+            flex: auto;
+            border-right: none;
+            border-bottom: 1px solid #e5e8e8;
+            padding: 6px;
+        }
+        .series-title-vertical {
+            writing-mode: horizontal-tb;
+            transform: none;
+            font-size: 11px;
+        }
+        .order-row {
+            flex-direction: column;
+        }
+        .order-left {
+            flex: auto;
+            border-right: none;
+            border-bottom: 1px dashed #d5dbdb;
+            padding: 6px;
+        }
+        .mono-series-card {
+            flex-direction: column;
+        }
+        .mono-left {
+            flex: auto;
+            border-right: none;
+            border-bottom: 1px dashed #d5dbdb;
+            padding: 8px;
+        }
+    }
+
 </style>
 </head>
 <body>
@@ -942,6 +992,8 @@ def build_html():
 </body>
 </html>"""
     with open(r"C:\Users\sures\.gemini\antigravity-ide\scratch\bentham_hooker_final_print.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
     print("Success")
 
