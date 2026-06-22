@@ -397,6 +397,24 @@ def generate_chart():
         gap: 4px;
         flex: 1;
     }
+
+    @media screen and (max-width: 1024px) {
+        .main-container {
+            margin: 0;
+            border-radius: 0;
+            max-width: 100%;
+        }
+        .grid-container {
+            grid-template-columns: 1fr !important;
+            gap: 12px;
+            padding: 8px;
+        }
+        .dicot-content {
+            grid-template-columns: 1fr !important;
+            gap: 10px;
+            padding: 6px;
+        }
+    }
     details.subclass-card {
         background-color: #ffffff;
         border-radius: 4px;
