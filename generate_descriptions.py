@@ -50,6 +50,7 @@ ALL_FAMILY_DESCRIPTIONS = {
     "CHAILLETIACEAE": "Shrubs or trees. Leaves alternate, entire. Flowers small, petals bifid, ovary superior, drupe fruit.",
     "OLACINEAE": "Trees or shrubs, often hemiparasitic. Flowers small, calyx enlarging in fruit, disc cup-shaped.",
     "ILICINEAE": "Evergreen trees or shrubs. Leaves alternate, simple. Flowers small, unisexual, drupe with multiple pyrenes.",
+    "CYRILLACEAE": "Shrubs or small trees. Leaves alternate, simple, exstipulate. Flowers small in racemes, stamens 5 or 10, fruit a capsule or drupe.",
     "CELASTRINEAE": "Shrubs or trees. Leaves opposite or alternate. Flowers small, regular, disc flat and adnate to calyx, stamens alternate with petals.",
     "STACKHOUSIEAE": "Herbs with alternate simple leaves. Flowers in spikes, corolla tubular with free claws, fruit of 3-5 eremicos.",
     "RHAMNEAE": "Trees/shrubs, often thorny. Leaves simple, stipules often modified into spines. Stamens opposite the small hooded petals.",
@@ -143,7 +144,7 @@ ALL_FAMILY_DESCRIPTIONS = {
     # Monochlamydeae
     "NYCTAGINEAE": "Opposite leaves. Flowers small surrounded by colorful bracts, perianth tubular, 1-seeded anthocarp fruit.",
     "ILLECEBRACEAE": "Small herbs, leaves opposite. Flowers small, green, perianth scarious, single seed.",
-    "AMARANTACEAE [sic]": "Herbs with scarious bracteate flowers, perianth dry and membranous, circumscissile capsule.",
+    "AMARANTACEAE": "Herbs with scarious bracteate flowers, perianth dry and membranous, circumscissile capsule.",
     "CHENOPODIACEAE": "Halophytic or succulent herbs. Flowers small, green, perianth fleshy or membranous, fruit a utricle.",
     "PHYTOLACCACEAE": "Herbs or shrubs. Flowers small, green or reddish, carpels numerous in a ring, fruit a berry.",
     "BATIDEAE": "Maritime succulent shrubs. Leaves opposite, small. Flowers unisexual in spikes, fruit a collective cone.",
