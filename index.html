@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bentham and Hooker Classification - Print Ready</title>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Bentham & Hooker's Complete Classification System (201 Families)</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
     :root {
         --color-dicot: #8b0000;
-        --color-gymno: #00008b;
+        --color-gymno: #0f3d59;
         --color-mono: #d35400;
         
         --color-poly: #2980b9;
@@ -30,16 +30,16 @@
     }
 
     body {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Outfit', sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #d5d8dc;
-        color: #333;
+        background-color: #f1f2f6;
+        color: #2c3e50;
         font-size: 11px;
     }
 
     @media print {
-        @page { size: A3 landscape; margin: 8mm; }
+        @page { size: A3 landscape; margin: 6mm; }
         body { background-color: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
         .main-container { box-shadow: none; max-width: 100%; margin: 0; border: none; }
         .no-print { display: none; }
@@ -50,44 +50,51 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 1680px;
+        max-width: 1720px;
         margin: 10px auto;
         background: #fff;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        border-radius: 6px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+        border-radius: 8px;
         overflow: hidden;
     }
 
     .header-main {
-        background-color: #1a252f;
+        background: linear-gradient(135deg, #1e272e 0%, #2f3640 100%);
         color: white;
         text-align: center;
-        padding: 8px;
+        padding: 10px;
         font-family: 'Merriweather', serif;
-        font-size: 18px;
-        letter-spacing: 1px;
+        border-bottom: 2px solid #2f3542;
+        position: relative;
+    }
+
+    .header-main h1 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
         text-transform: uppercase;
-        border-bottom: 2px solid #34495e;
+        color: #f1c40f;
     }
     
     .super-class-header {
-        background-color: #2c3e50;
-        color: #f1c40f;
+        background-color: #2f3542;
+        color: #ffffff;
         text-align: center;
-        padding: 6px;
+        padding: 5px;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 14px;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        border-bottom: 2px solid #34495e;
+        letter-spacing: 3px;
+        border-bottom: 2px solid #747d8c;
     }
 
     .grid-container {
         display: grid;
-        grid-template-columns: 3.2fr 0.8fr 1fr;
-        background: #e5e8e8;
-        padding: 8px;
-        gap: 8px;
+        grid-template-columns: 3.3fr 0.8fr 1.1fr;
+        background: #f1f2f6;
+        padding: 6px;
+        gap: 6px;
         align-items: start;
     }
 
@@ -95,7 +102,7 @@
     .top-level-card {
         background-color: #ffffff;
         border-radius: 6px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.04);
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -103,35 +110,37 @@
     .top-level-header {
         color: white;
         text-align: center;
-        padding: 6px;
+        padding: 8px 4px;
         font-weight: 700;
         font-size: 13px;
         text-transform: uppercase;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
     }
     .top-level-desc {
-        font-size: 9.5px;
+        font-size: 9px;
         font-weight: 400;
         margin-top: 2px;
         text-transform: none;
-        opacity: 0.9;
+        opacity: 0.95;
     }
 
     /* --- LEVEL 2: Subclass Cards --- */
     .dicot-content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        background: #f4f6f7;
-        padding: 6px;
-        gap: 6px;
+        grid-template-columns: 1.1fr 1fr 0.9fr;
+        background: #f1f2f6;
+        padding: 4px;
+        gap: 4px;
         flex: 1;
     }
     .subclass-card {
         background-color: #ffffff;
         border-radius: 4px;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.02);
         display: flex;
         flex-direction: column;
-        border: 1px solid #dcdde1;
+        border: 1px solid #e1b12c;
     }
     .subclass-header {
         color: white;
@@ -144,8 +153,9 @@
         padding: 4px;
         display: flex;
         flex-direction: column;
-        background: #f8f9f9;
+        background: #f8f9fa;
         flex: 1;
+        gap: 4px;
     }
 
     /* --- LEVEL 3: Series Card --- */
@@ -154,25 +164,26 @@
         flex-direction: row;
         background-color: #ffffff;
         border-radius: 4px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-        border: 1px solid #d5dbdb;
-        margin-bottom: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        border: 1px solid #ced6e0;
     }
     .series-left {
-        flex: 0 0 25px;
-        background-color: rgba(0,0,0,0.04);
-        border-right: 1px solid #e5e8e8;
+        flex: 0 0 22px;
+        background-color: rgba(0,0,0,0.03);
+        border-right: 1px solid #dfe4ea;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 6px 2px;
+        padding: 4px 1px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
     }
     .series-title-vertical {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         font-weight: 700;
-        font-size: 10px;
-        color: #2c3e50;
+        font-size: 9px;
+        color: #2f3542;
         letter-spacing: 1px;
         text-align: center;
     }
@@ -180,84 +191,102 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        padding: 4px;
+        padding: 3px;
         background-color: #ffffff;
+        gap: 3px;
     }
 
     /* --- LEVEL 4: Order Card --- */
     .order-row {
         display: flex;
-        background-color: #fbfcfc;
-        border-radius: 3px;
-        border: 1px solid #eaeded;
-        margin-bottom: 4px;
-    }
-    .order-row:last-child { margin-bottom: 0; }
-    
-    .order-left {
-        flex: 0 0 35%;
-        padding: 4px;
-        border-right: 1px dashed #d5dbdb;
-        background-color: #fdfdfd;
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        background-color: #fcfcfc;
+        border-radius: 3px;
+        border: 1px solid #f1f2f6;
+        padding: 3px;
+    }
+    
+    .order-header-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3px;
+        padding-bottom: 2px;
+        border-bottom: 1px dashed #dfe4ea;
     }
     
     .order-title {
         font-weight: 700;
         color: white;
-        font-size: 10px;
+        font-size: 9px;
         text-transform: uppercase;
-        padding: 3px 6px;
+        padding: 1.5px 4px;
         border-radius: 3px;
         display: inline-block;
     }
 
     .order-desc {
-        font-size: 8.5px;
-        color: #555;
-        background-color: #f4f6f7;
-        border: 1px solid #eaeded;
-        border-radius: 2px;
-        padding: 3px 4px;
-        margin-top: 4px;
-        line-height: 1.1;
+        font-size: 8px;
+        color: #747d8c;
+        font-style: italic;
+        line-height: 1;
+        margin-left: 5px;
     }
 
-    .families-right {
-        flex: 1;
-        padding: 4px;
+    /* --- LEVEL 5 & 6: Family Badges --- */
+    .families-flex-container {
         display: flex;
-        flex-direction: column;
-        gap: 4px;
-        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3px;
+        align-items: center;
     }
 
-    /* --- LEVEL 5 & 6: Family Card & Inner Description Box --- */
-    .family-card {
-        background: #ffffff;
-        border: 1px solid #e0e0e0;
-        border-radius: 3px;
-        padding: 4px;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.03);
-    }
-    .family-card-title {
-        font-weight: 700;
-        color: #1a252f;
-        font-size: 10px;
-    }
-    .family-card-desc {
+    .family-badge {
         font-size: 8.5px;
-        color: #555;
-        background-color: #f9fbfc;
-        border: 1px solid #e5e8e8;
-        border-radius: 2px;
-        padding: 3px 4px;
-        margin-top: 2px;
-        line-height: 1.1;
+        font-weight: 600;
+        background-color: #f1f2f6;
+        color: #2c3e50;
+        padding: 2.5px 5px;
+        border-radius: 12px;
+        border: 1px solid #ced6e0;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.2s;
+    }
+
+    /* Highlighted Syllabus Families */
+    .family-badge.syllabus-highlight {
+        background-color: #fff9db;
+        border: 1.5px solid #f1c40f;
+        color: #b7791f;
+        box-shadow: 0 1px 3px rgba(241, 196, 15, 0.2);
     }
     
+    .family-badge.syllabus-highlight::before {
+        content: "★ ";
+        color: #f1c40f;
+        margin-right: 2px;
+        font-size: 8px;
+    }
+
+    /* Detail block for syllabus families */
+    .syllabus-details-box {
+        margin-top: 4px;
+        padding: 3px 5px;
+        background-color: #fffaf0;
+        border-left: 2.5px solid #f1c40f;
+        border-radius: 2px;
+        font-size: 8.2px;
+        line-height: 1.1;
+        color: #5d4037;
+    }
+    
+    .syllabus-details-box strong {
+        color: #795548;
+        text-transform: uppercase;
+        font-size: 8px;
+    }
+
     /* Series Specific Tints */
     .bg-thala .series-left { background-color: var(--color-thala-bg); }
     .bg-disci .series-left { background-color: var(--color-disci-bg); }
@@ -269,93 +298,81 @@
 
     /* Gymnosperm & Monocot styling */
     .gymno-content { 
-        padding: 6px; 
+        padding: 4px; 
         display: flex; 
         flex-direction: column; 
-        gap: 6px; 
-        background: #f8f9f9;
+        gap: 4px; 
+        background: #f1f2f6;
         flex: 1;
     }
     .gymno-card {
         background: #ffffff;
-        padding: 6px;
+        padding: 4px;
         border-radius: 4px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-        border: 1px solid #d5dbdb;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        border: 1px solid #ced6e0;
     }
-    .gymno-title { font-weight: 700; font-size: 11px; color: white; padding: 3px 6px; border-radius: 3px; display: inline-block; text-transform: uppercase;}
-    .gymno-desc { 
-        font-size: 8.5px; 
-        color: #555; 
-        background-color: #f9fbfc;
-        border: 1px solid #eaeded;
-        border-radius: 2px;
-        padding: 3px;
-        margin-top: 4px;
-        line-height: 1.1;
-    }
+    .gymno-title { font-weight: 700; font-size: 9px; color: white; padding: 2px 5px; border-radius: 3px; display: inline-block; text-transform: uppercase;}
     
     .mono-content { 
         display: flex; 
         flex-direction: column; 
-        background: #f8f9f9; 
-        padding: 6px;
-        gap: 6px;
+        background: #f1f2f6; 
+        padding: 4px;
+        gap: 4px;
         flex: 1;
     }
     
     .mono-series-card {
         display: flex;
-        background-color: #fbfcfc;
-        border-radius: 4px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-        border: 1px solid #eaeded;
-    }
-    .mono-left { 
-        flex: 0 0 35%; 
-        padding: 6px; 
-        border-right: 1px dashed #d5dbdb; 
-        background-color: #fdfdfd;
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        background-color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        border: 1px solid #ced6e0;
+        padding: 4px;
+    }
+    .mono-series-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4px;
+        border-bottom: 1.5px solid #dfe4ea;
+        padding-bottom: 2px;
     }
     .mono-left-title {
         font-weight: 700; 
         color: white; 
-        font-size: 10px;
-        padding: 3px 6px;
+        font-size: 9px;
+        padding: 2px 5px;
         border-radius: 3px;
         display: inline-block;
     }
-    .mono-right { 
-        flex: 1; 
-        padding: 4px; 
-        display: flex; 
-        flex-direction: column; 
-        gap: 4px; 
-        justify-content: center;
-        background-color: #ffffff;
+    .mono-series-desc {
+        font-size: 8px;
+        color: #747d8c;
+        font-style: italic;
+        margin-left: 5px;
     }
 
 </style>
 </head>
 <body>
 
-<div class="no-print" style="text-align: center; margin-bottom: 5px;">
-    <button onclick="window.print()" style="padding: 8px 16px; font-size: 14px; cursor: pointer; background: #2c3e50; color: white; border: none; border-radius: 4px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">🖨️ Print Chart</button>
+<div class="no-print" style="text-align: center; padding: 6px; background-color: #2f3542;">
+    <button onclick="window.print()" style="padding: 6px 14px; font-size: 12px; cursor: pointer; background: #e1b12c; color: #2f3542; border: none; border-radius: 4px; font-weight: 800; box-shadow: 0 2px 4px rgba(0,0,0,0.2); transition: all 0.2s;">🖨️ Print Complete Chart (A3 Landscape)</button>
 </div>
 
 <div class="main-container">
     <div class="header-main">
-        Bentham and Hooker's Classification
-        <div style="font-size: 11px; font-weight: 400; font-family: 'Open Sans', sans-serif; letter-spacing: 0; margin-top: 2px; text-transform: none;">
-            For MSc Botany Syllabus - University of Calicut
+        <h1>Bentham and Hooker's Classification System</h1>
+        <div style="font-size: 11px; font-weight: 600; color: #dfe4ea; letter-spacing: 0.5px; margin-top: 2px;">
+            Complete Tree of 201 Families | Highlighted Syllabus Families (★) with Diagnostic Descriptions
         </div>
     </div>
     
     <div class="super-class-header">
-        PHANEROGAMS
+        PHANEROGAMS (SEED-BEARING PLANTS)
     </div>
     
     <div class="grid-container">
@@ -363,575 +380,1295 @@
         <div class="top-level-card" style="border-top: 4px solid var(--color-dicot);">
             <div class="top-level-header" style="background-color: var(--color-dicot);">
                 DICOTYLEDONS
-                <div class="top-level-desc">Two cotyledons, open vascular bundles, reticulate venation</div>
+                <div class="top-level-desc">Two cotyledons, reticulate venation, pentamerous flowers, ringed vascular bundles</div>
             </div>
             
             <div class="dicot-content">
                 <!-- POLYPETALAE CARD -->
-                <div class="subclass-card">
+                <div class="subclass-card" style="border-color: var(--color-poly);">
                     <div class="subclass-header" style="background-color: var(--color-poly);">
                         POLYPETALAE
-                        <div class="top-level-desc" style="font-size: 8.5px;">Two distinct whorls of perianth; corolla free</div>
+                        <div class="top-level-desc" style="font-size: 8px;">Corolla of free distinct petals</div>
                     </div>
                     
                     <div class="subclass-body">
-                        <!-- THALAMIFLORAE -->
+                        <!-- SERIES THALAMIFLORAE -->
                         <div class="series-block bg-thala">
                             <div class="series-left"><div class="series-title-vertical">THALAMIFLORAE</div></div>
                             <div class="series-content">
-                                <!-- RANALES -->
-                                <div class="order-row" style="border-left: 4px solid #3498db;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #3498db;">RANALES</div>
-                                        <div class="order-desc">Bisexual/Unisexual, hypogynous, many free stamens/carpels</div>
+                                <div class="order-row" style="border-left: 3px solid #3498db;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #3498db;">
+                                            RANALES
+                                        </div>
+                                        <div class="order-desc">Many stamens, apocarpous carpels</div>
                                     </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #3498db;">
-                                            <div class="family-card-title">1. RANUNCULACEAE</div>
-                                            <div class="family-card-desc">Herbs with radially symmetrical flowers, numerous free parts spirally arranged. Alternate, dissected leaves.</div>
-                                        </div>
-                                        <div class="family-card" style="border-left: 3px solid #3498db;">
-                                            <div class="family-card-title">2. MAGNOLIACEAE</div>
-                                            <div class="family-card-desc">Trees/shrubs, aromatic. Bisexual, actinomorphic, 9-12 spirally arranged perianth segments.</div>
-                                        </div>
-                                        <div class="family-card" style="border-left: 3px solid #3498db;">
-                                            <div class="family-card-title">3. MENISPERMACEAE</div>
-                                            <div class="family-card-desc">Dioecious woody vines. Unisexual flowers, 3-8 sepals, no petals.</div>
-                                        </div>
-                                        <div class="family-card" style="border-left: 3px solid #3498db;">
-                                            <div class="family-card-title">4. NYMPHAEACEAE</div>
-                                            <div class="family-card-desc">Aquatic herbs, rhizomatous stems, peltate floating leaves. Large showy flowers.</div>
-                                        </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge syllabus-highlight">
+                                            1. RANUNCULACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            2. DILLENIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            3. CALYCANTHACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            4. MAGNOLIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            5. ANONACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            6. MENISPERMACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            7. BERBERIDACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            8. NYMPHAEACEAE
+                                        </span>
                                     </div>
-                                </div>
-                                
-                                <!-- PARIETALES -->
-                                <div class="order-row" style="border-left: 4px solid #16a085;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #16a085;">PARIETALES</div>
+                                    <div class="syllabus-details-box">
+                                        <strong>1. RANUNCULACEAE</strong> &mdash; Herbs, opposite/alternate leaves. Flowers bisexual, actinomorphic, sepals and petals free, stamens numerous and spirally arranged.
                                     </div>
-                                    <div class="families-right">
-                                        <div class="order-title" style="margin-top: 1px; background-color: #16a085; font-size: 9px; padding: 2px 4px;">POLYGALYNEAE</div>
-                                        <div class="order-desc" style="margin-top: 0; margin-bottom: 2px;">Herbs/shrubs, exstipulate leaves, bilocular ovary</div>
-                                        <div class="family-card" style="border-left: 3px solid #16a085;">
-                                            <div class="family-card-title">5. POLYGALACEAE</div>
-                                            <div class="family-card-desc">Alternate/whorled leaves, 5 sepals (3 petal-like). 8 stamens united in tube.</div>
-                                        </div>
-                                        
-                                        <div class="order-title" style="margin-top: 4px; background-color: #16a085; font-size: 9px; padding: 2px 4px;">CARYOPHYLLINIAE</div>
-                                        <div class="order-desc" style="margin-top: 0; margin-bottom: 2px;">Regular flowers, free central placentation</div>
-                                        <div class="family-card" style="border-left: 3px solid #16a085;">
-                                            <div class="family-card-title">6. CARYOPHYLLACEAE</div>
-                                            <div class="family-card-desc">Opposite entire leaves, clawed petals, 2-5 united carpels.</div>
-                                        </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>4. MAGNOLIACEAE</strong> &mdash; Aromatic trees/shrubs. Alternate simple leaves with stipules. Flowers large, showy, perianth spirally arranged, stamens and carpels numerous.
                                     </div>
-                                </div>
- 
-                                <!-- GUTTIFERALES -->
-                                <div class="order-row" style="border-left: 4px solid #e67e22;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #e67e22;">GUTTIFERALES</div>
-                                        <div class="order-desc">Radial flowers, numerous stamens, superior ovary</div>
+                                    <div class="syllabus-details-box">
+                                        <strong>6. MENISPERMACEAE</strong> &mdash; Dioecious climbing shrubs. Palmate leaves. Flowers small, unisexual, trimerous. Seed hooked or curved (drupe).
                                     </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #e67e22;">
-                                            <div class="family-card-title">7. GUTTIFERAE (Clusiaceae)</div>
-                                            <div class="family-card-desc">Trees/shrubs, shiny leaves. 4-8 colorful wrinkled petals, clustered stamens.</div>
-                                        </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>8. NYMPHAEACEAE</strong> &mdash; Aquatic perennial herbs. Large floating peltate leaves. Flowers large, showy, solitary on long peduncles, numerous petals and stamens.
                                     </div>
                                 </div>
- 
-                                <!-- MALVALES -->
-                                <div class="order-row" style="border-left: 4px solid #f1c40f;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #f1c40f;">MALVALES</div>
-                                        <div class="order-desc">Palmately veined stipulate leaves, stamens united in tube</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #f1c40f;">
-                                            <div class="family-card-title">8. STERCULIACEAE</div>
-                                            <div class="family-card-desc">Alternate simple stipulate leaves. Bisexual, twice as many stamens as petals.</div>
+                                <div class="order-row" style="border-left: 3px solid #16a085;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #16a085;">
+                                            PARIETALES
                                         </div>
+                                        <div class="order-desc">Parietal placentation</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            9. SARRACENIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            10. PAPAVERACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            11. CRUCIFERAE
+                                        </span>
+                                        <span class="family-badge">
+                                            12. CAPPARIDEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            13. RESEDACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            14. CISTINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            15. VIOLARIEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            16. CANELLACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            17. BIXINEAE
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #8e44ad;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #8e44ad;">
+                                            POLYGALYNEAE
+                                        </div>
+                                        <div class="order-desc">Irregular flowers, bilocular ovary</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            18. PITTOSPOREAE
+                                        </span>
+                                        <span class="family-badge">
+                                            19. TREMANDREAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            20. POLYGALAE
+                                        </span>
+                                        <span class="family-badge">
+                                            21. VOCHYSIACEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>20. POLYGALAE</strong> &mdash; Herbs or shrubs, exstipulate leaves. Flowers zygomorphic, papilionaceous-like, 5 sepals (2 large petaloid wings), 8 stamens fused in a split tube.
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #2980b9;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #2980b9;">
+                                            CARYOPHYLLINIAE
+                                        </div>
+                                        <div class="order-desc">Opposite leaves, free-central placentation</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            22. FRANKENIACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            23. CARYOPHYLLEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            24. PORTULACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            25. TAMARISCINEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>23. CARYOPHYLLEAE</strong> &mdash; Herbs with swollen nodes, opposite entire leaves. Flowers in cymes, 5 clawed petals, 10 stamens, free central placentation.
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #e67e22;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #e67e22;">
+                                            GUTTIFERALES
+                                        </div>
+                                        <div class="order-desc">Opposite leaves, numerous stamens</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            26. ELATINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            27. HYPERICINEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            28. GUTTIFERAE
+                                        </span>
+                                        <span class="family-badge">
+                                            29. TERNSTROEMIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            30. DIPTEROCARPEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            31. CHLENACEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>28. GUTTIFERAE</strong> &mdash; Trees or shrubs with resinous sap, opposite entire leaves. Flowers actinomorphic, stamens numerous and clustered in bundles (polyadelphous).
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #f1c40f;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #f1c40f;">
+                                            MALVALES
+                                        </div>
+                                        <div class="order-desc">Stellate hairs, monadelphous stamens</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            32. MALVACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            33. STERCULIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            34. TILIACEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>33. STERCULIACEAE</strong> &mdash; Herbs/trees with stellate hairs, alternate stipulate leaves. Flowers bisexual/unisexual, stamens fused in a monadelphous tube, anthers 2-loculed.
                                     </div>
                                 </div>
                             </div>
                         </div>
- 
-                        <!-- DISCIFLORAE -->
+                        <!-- SERIES DISCIFLORAE -->
                         <div class="series-block bg-disci">
                             <div class="series-left"><div class="series-title-vertical">DISCIFLORAE</div></div>
                             <div class="series-content">
-                                <!-- GERANIALES -->
-                                <div class="order-row" style="border-left: 4px solid #2ecc71;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #2ecc71;">GERANIALES</div>
-                                        <div class="order-desc">10 stamens, 5-carpellate superior ovary, nectary disc</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #2ecc71;">
-                                            <div class="family-card-title">9. MELIACEAE</div>
-                                            <div class="family-card-desc">Trees/climbers, pinnate leaves without stipules. Stamens often fused.</div>
+                                <div class="order-row" style="border-left: 3px solid #2ecc71;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #2ecc71;">
+                                            GERANIALES
                                         </div>
+                                        <div class="order-desc">Ovary multi-locular, nectary disc present</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            35. LINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            36. HUMIRIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            37. MALPIGHIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            38. ZYGOPHYLLEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            39. GERANIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            40. RUTACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            41. SIMARUBEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            42. OCHNACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            43. BURSERACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            44. MELIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            45. CHAILLETIACEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>44. MELIACEAE</strong> &mdash; Woody plants, mostly trees, pinnate exstipulate leaves. Flowers in panicles, stamens fused into a characteristic staminal tube.
                                     </div>
                                 </div>
-                                
-                                <div class="order-row" style="border-left: 4px solid #1abc9c;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #1abc9c;">OLACALES</div>
-                                    </div>
-                                    <div class="families-right"></div>
-                                </div>
-                                <div class="order-row" style="border-left: 4px solid #34495e;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #34495e;">CELASTRALES</div>
-                                    </div>
-                                    <div class="families-right"></div>
-                                </div>
- 
-                                <!-- SAPINDALES -->
-                                <div class="order-row" style="border-left: 4px solid #f39c12;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #f39c12;">SAPINDALES</div>
-                                        <div class="order-desc">Compound leaves, variable stamens</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #f39c12;">
-                                            <div class="family-card-title">10. SAPINDACEAE</div>
-                                            <div class="family-card-desc">Compound leaves, unisexual/bisexual. Fruit a capsule/schizocarp (winged).</div>
+                                <div class="order-row" style="border-left: 3px solid #1abc9c;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #1abc9c;">
+                                            OLACALES
                                         </div>
+                                        <div class="order-desc">Disc cushion-like, superior ovary</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            46. OLACINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            47. ILICINEAE
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #34495e;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #34495e;">
+                                            CELESTRALES
+                                        </div>
+                                        <div class="order-desc">Disc prominent, stamens alternate with petals</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            48. CELASTRINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            49. STACKHOUSIEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            50. RHAMNEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            51. AMPELIDEAE
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #f39c12;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #f39c12;">
+                                            SAPINDALES
+                                        </div>
+                                        <div class="order-desc">Compound leaves, disc prominent, variable stamens</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge syllabus-highlight">
+                                            52. SAPINDACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            53. SABIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            54. ANACARDIACEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>52. SAPINDACEAE</strong> &mdash; Trees/shrubs, compound leaves. Flowers small, unisexual, disc present. Fruit often lobed or winged, seeds with aril.
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #7f8c8d;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #7f8c8d;">
+                                            POTIUS GENERA ANOMALA
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            55. CORIARIEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            56. MORINGEAE
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
- 
-                        <!-- CALYCIFLORAE -->
+                        <!-- SERIES CALYCIFLORAE -->
                         <div class="series-block bg-calyci">
                             <div class="series-left"><div class="series-title-vertical">CALYCIFLORAE</div></div>
                             <div class="series-content">
-                                <!-- ROSALES -->
-                                <div class="order-row" style="border-left: 4px solid #e74c3c;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #e74c3c;">ROSALES</div>
-                                        <div class="order-desc">Stipulate leaves, perigynous, apocarpous</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #e74c3c;">
-                                            <div class="family-card-title">11. ROSACEAE</div>
-                                            <div class="family-card-desc">Actinomorphic with hypanthium. Fruit achene, follicle, drupe, or pome.</div>
+                                <div class="order-row" style="border-left: 3px solid #e74c3c;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #e74c3c;">
+                                            ROSALES
                                         </div>
+                                        <div class="order-desc">Perigynous/epigynous, stipulate leaves</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            57. CONNARACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            58. LEGUMINOSAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            59. ROSACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            60. SAXIFRAGEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            61. CRASSULACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            62. DROSERACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            63. HAMAMELIDEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            64. BRUNIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            65. HALORAGEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>59. ROSACEAE</strong> &mdash; Herbs/shrubs/trees, stipulate leaves. Flowers actinomorphic, perigynous, hypanthium present, stamens numerous, apocarpous/syncarpous.
                                     </div>
                                 </div>
-                                
-                                <!-- MYRTALES -->
-                                <div class="order-row" style="border-left: 4px solid #c0392b;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #c0392b;">MYRTALES</div>
-                                        <div class="order-desc">Aromatic leaves, epigynous, 2-5 fused carpels</div>
+                                <div class="order-row" style="border-left: 3px solid #c0392b;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #c0392b;">
+                                            MYRTALES
+                                        </div>
+                                        <div class="order-desc">Syncarpous, epigynous, aromatic</div>
                                     </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #c0392b;">
-                                            <div class="family-card-title">12. RHIZOPHOREAE</div>
-                                            <div class="family-card-desc">Mangroves, opposite stipulate leaves. Inferior syncarpous ovary.</div>
-                                        </div>
-                                        <div class="family-card" style="border-left: 3px solid #c0392b;">
-                                            <div class="family-card-title">13. MELASTOMACEAE</div>
-                                            <div class="family-card-desc">Nodes often thickened, hypanthium present. Poricidal anthers.</div>
-                                        </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge syllabus-highlight">
+                                            66. RHIZOPHOREAE
+                                        </span>
+                                        <span class="family-badge">
+                                            67. COMBRETACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            68. MYRTACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            69. MELASTOMACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            70. LYTHRARIEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            71. ONAGRARIEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>66. RHIZOPHOREAE</strong> &mdash; Mangrove trees with stilt roots and viviparous germination. Opposite stipulate leaves. Flowers bisexual, inferior ovary.
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>69. MELASTOMACEAE</strong> &mdash; Herbs/shrubs with opposite 3-9 palmately veined leaves. Stamens with characteristic curved connective and poricidal dehiscing anthers.
                                     </div>
                                 </div>
- 
-                                <!-- FICOIDALES -->
-                                <div class="order-row" style="border-left: 4px solid #9b59b6;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #9b59b6;">FICOIDALES</div>
-                                        <div class="order-desc">Simple leaves, superior syncarpous ovary</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #9b59b6;">
-                                            <div class="family-card-title">14. AIZOACEAE</div>
-                                            <div class="family-card-desc">Succulent herbs/shrubs. Petals absent or few. Parietal placentation.</div>
+                                <div class="order-row" style="border-left: 3px solid #8e44ad;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #8e44ad;">
+                                            PASSIFLORALES
                                         </div>
+                                        <div class="order-desc">Climbers, parietal placentation, tendrils</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            72. SAMYDACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            73. LOASEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            74. TURNERACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            75. PASSIFLOREAE
+                                        </span>
+                                        <span class="family-badge">
+                                            76. CUCURBITACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            77. BEGONIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            78. DATISCEAE
+                                        </span>
                                     </div>
                                 </div>
-                                
-                                <div class="order-row" style="border-left: 4px solid #8e44ad;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #8e44ad;">PASSIFLORALES</div>
+                                <div class="order-row" style="border-left: 3px solid #9b59b6;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #9b59b6;">
+                                            FICOIDALES
+                                        </div>
+                                        <div class="order-desc">Carpels fused, succulent habit</div>
                                     </div>
-                                    <div class="families-right"></div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            79. CACTEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            80. FICIOIDEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>80. FICIOIDEAE</strong> &mdash; Succulent herbs/shrubs. Leaves opposite or alternate. Flowers regular, petals absent or represented by petaloid staminodes, parietal/axile placentation.
+                                    </div>
                                 </div>
-                                <div class="order-row" style="border-left: 4px solid #2980b9;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #2980b9;">UMBELLALES</div>
+                                <div class="order-row" style="border-left: 3px solid #2980b9;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #2980b9;">
+                                            UMBELLALES
+                                        </div>
+                                        <div class="order-desc">Flowers in umbels, inferior ovary</div>
                                     </div>
-                                    <div class="families-right"></div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            81. UMBELLIFERAE
+                                        </span>
+                                        <span class="family-badge">
+                                            82. ARALIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            83. CORNACEAE
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
- 
                 <!-- GAMOPETALAE CARD -->
-                <div class="subclass-card">
+                <div class="subclass-card" style="border-color: var(--color-gamo);">
                     <div class="subclass-header" style="background-color: var(--color-gamo);">
                         GAMOPETALAE
-                        <div class="top-level-desc" style="font-size: 8.5px;">Two distinct whorls of perianth; corolla fused</div>
+                        <div class="top-level-desc" style="font-size: 8px;">Corolla of fused sympetalous petals</div>
                     </div>
- 
+                    
                     <div class="subclass-body">
-                        <!-- INFERAE -->
+                        <!-- SERIES INFERAE -->
                         <div class="series-block bg-inferae">
                             <div class="series-left"><div class="series-title-vertical">INFERAE</div></div>
                             <div class="series-content">
-                                <!-- RUBIALES -->
-                                <div class="order-row" style="border-left: 4px solid #27ae60;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #27ae60;">RUBIALES</div>
-                                        <div class="order-desc">Opposite stipulate leaves, tubular epigynous, bicarpellate</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #27ae60;">
-                                            <div class="family-card-title">15. RUBIACEAE</div>
-                                            <div class="family-card-desc">Interpetiolar stipules. Calyx fused, corolla tubular. Inferior ovary.</div>
+                                <div class="order-row" style="border-left: 3px solid #27ae60;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #27ae60;">
+                                            RUBIALES
                                         </div>
+                                        <div class="order-desc">Opposite leaves, interpetiolar stipules</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            84. CAPRIFOLIACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            85. RUBIACEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>85. RUBIACEAE</strong> &mdash; Trees/shrubs/herbs, opposite entire leaves with interpetiolar stipules. Flowers actinomorphic, sympetalous, inferior ovary.
                                     </div>
                                 </div>
-                                <div class="order-row" style="border-left: 4px solid #16a085;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #16a085;">ASTERALES</div>
+                                <div class="order-row" style="border-left: 3px solid #16a085;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #16a085;">
+                                            ASTERALES
+                                        </div>
+                                        <div class="order-desc">Syngenesious anthers, head inflorescence</div>
                                     </div>
-                                    <div class="families-right"></div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            86. VALERIANEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            87. DIPSACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            88. CALCEREAE
+                                        </span>
+                                        <span class="family-badge">
+                                            89. COMPOSITAE
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="order-row" style="border-left: 4px solid #f39c12;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #f39c12;">CAMPANALES</div>
+                                <div class="order-row" style="border-left: 3px solid #f39c12;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #f39c12;">
+                                            COMPANALES
+                                        </div>
+                                        <div class="order-desc">Anthers free or connate, inferior ovary</div>
                                     </div>
-                                    <div class="families-right"></div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            90. STYLIDIEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            91. GOODENOVIEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            92. CAMPANULACEAE
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
- 
-                        <!-- HETEROMERAE -->
+                        <!-- SERIES HETEROMERAE -->
                         <div class="series-block bg-hetero">
                             <div class="series-left"><div class="series-title-vertical">HETEROMERAE</div></div>
                             <div class="series-content">
-                                <div class="order-row" style="border-left: 4px solid #8e44ad;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #8e44ad;">ERICALES</div>
-                                    </div>
-                                    <div class="families-right"></div>
-                                </div>
-                                <div class="order-row" style="border-left: 4px solid #2980b9;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #2980b9;">PRIMULALES</div>
-                                    </div>
-                                    <div class="families-right"></div>
-                                </div>
-                                <!-- EBENALES -->
-                                <div class="order-row" style="border-left: 4px solid #c0392b;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #c0392b;">EBENALES</div>
-                                        <div class="order-desc">Simple entire leaves, superior compound ovary</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #c0392b;">
-                                            <div class="family-card-title">16. SAPOTACEAE</div>
-                                            <div class="family-card-desc">Trees/shrubs with milky latex. Corolla sympetalous.</div>
+                                <div class="order-row" style="border-left: 3px solid #8e44ad;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #8e44ad;">
+                                            ERICALES
                                         </div>
+                                        <div class="order-desc">Anthers open by pores, superior ovary</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            93. VACCINIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            94. ERICACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            95. MONOTROPEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            96. EPACRIDEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            97. DIAPENSIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            98. LENNOACEAE
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #2980b9;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #2980b9;">
+                                            PRIMULALES
+                                        </div>
+                                        <div class="order-desc">Stamens opposite petals, free-central placentation</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            99. PLUMBAGINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            100. PRIMULACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            101. MYRSINEAE
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #c0392b;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #c0392b;">
+                                            EBENALES
+                                        </div>
+                                        <div class="order-desc">Woody plants, superior ovary, stamens in whorls</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge syllabus-highlight">
+                                            102. SAPOTACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            103. EBENACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            104. STYRACEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>102. SAPOTACEAE</strong> &mdash; Trees or shrubs with milky latex. Leaves alternate, entire. Flowers actinomorphic, sympetalous, stamens in whorls, ovary superior.
                                     </div>
                                 </div>
                             </div>
                         </div>
- 
-                        <!-- BICARPELLATAE -->
+                        <!-- SERIES BICARPELLATAE -->
                         <div class="series-block bg-bicar">
                             <div class="series-left"><div class="series-title-vertical">BICARPELLATAE</div></div>
                             <div class="series-content">
-                                <!-- GENTIANALES -->
-                                <div class="order-row" style="border-left: 4px solid #f39c12;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #f39c12;">GENTIANALES</div>
-                                        <div class="order-desc">Simple stipulate leaves, superior bicarpellate ovary</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #f39c12;">
-                                            <div class="family-card-title">17. GENTIANACEAE</div>
-                                            <div class="family-card-desc">Opposite/whorled leaves. Bitter glycosides. Parietal placentation.</div>
+                                <div class="order-row" style="border-left: 3px solid #f39c12;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #f39c12;">
+                                            GENTIANALES
                                         </div>
+                                        <div class="order-desc">Opposite leaves, superior bicarpellate ovary</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            105. OLEACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            106. SALVADORACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            107. APOCYNACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            108. ASCLEPIADEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            109. LOGANIACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            110. GENTIANEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>110. GENTIANEAE</strong> &mdash; Herbs, opposite entire leaves. Flowers actinomorphic, sympetalous, ovary superior, unilocular with parietal placentation.
                                     </div>
                                 </div>
-                                
-                                <!-- POLEMONEALES -->
-                                <div class="order-row" style="border-left: 4px solid #e67e22;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #e67e22;">POLEMONEALES</div>
-                                        <div class="order-desc">Exstipulate leaves, tubular corolla, epipetalous stamens</div>
+                                <div class="order-row" style="border-left: 3px solid #e67e22;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #e67e22;">
+                                            POLEMONEALES
+                                        </div>
+                                        <div class="order-desc">Alternate leaves, regular flowers</div>
                                     </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #e67e22;">
-                                            <div class="family-card-title">18. BORAGINACEAE</div>
-                                            <div class="family-card-desc">Alternate basal leaves. Deeply 4-lobed ovary, fruit a schizocarp.</div>
-                                        </div>
-                                        <div class="family-card" style="border-left: 3px solid #e67e22;">
-                                            <div class="family-card-title">19. CONVOLVULACEAE</div>
-                                            <div class="family-card-desc">Herbs/climbers. Corolla sympetalous, ovary superior bicarpellate.</div>
-                                        </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            111. POLEMONIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            112. HYDROPHYLLACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            113. BORAGINEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            114. CONVOLVULACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            115. SOLANACEAE
+                                        </span>
                                     </div>
-                                </div>
- 
-                                <!-- PERSONALES -->
-                                <div class="order-row" style="border-left: 4px solid #d35400;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #d35400;">PERSONALES</div>
-                                        <div class="order-desc">Zygomorphic flowers, didynamous stamens</div>
+                                    <div class="syllabus-details-box">
+                                        <strong>113. BORAGINEAE</strong> &mdash; Hispid herbs with scorpioid cymes. Flowers regular, sympetalous, ovary deeply 4-lobed, style gynobasic.
                                     </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #d35400;">
-                                            <div class="family-card-title">20. SCROPHULARIACEAE</div>
-                                            <div class="family-card-desc">Zygomorphic, numerous ovules per locule on axile placentation.</div>
-                                        </div>
-                                        <div class="family-card" style="border-left: 3px solid #d35400;">
-                                            <div class="family-card-title">21. PEDALIACEAE</div>
-                                            <div class="family-card-desc">Viscid pubescent leaves. Corolla bilabiate. Capsule with hooks/spines.</div>
-                                        </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>114. CONVOLVULACEAE</strong> &mdash; Twining herbs/shrubs, alternate leaves. Flowers funnel-shaped, sympetalous, ovary superior and bicarpellate.
                                     </div>
                                 </div>
- 
-                                <!-- LAMIALES -->
-                                <div class="order-row" style="border-left: 4px solid #8e44ad;">
-                                    <div class="order-left">
-                                        <div class="order-title" style="background-color: #8e44ad;">LAMIALES</div>
-                                        <div class="order-desc">Irregular zygomorphic flowers, reduced stamens</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #8e44ad;">
-                                            <div class="family-card-title">22. VERBENACEAE</div>
-                                            <div class="family-card-desc">Quadrangular stems. Terminal panicles, corolla tubular.</div>
+                                <div class="order-row" style="border-left: 3px solid #d35400;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #d35400;">
+                                            PERSONALES
                                         </div>
+                                        <div class="order-desc">Zygomorphic, didynamous stamens, axile placentation</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge syllabus-highlight">
+                                            116. SCROPHULARINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            117. OROBRANCHACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            118. LENTIBULARIEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            119. COLUMELLIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            120. GESNERACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            121. BIGNONIACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            122. PEDALINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            123. ACANTHACEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>116. SCROPHULARINEAE</strong> &mdash; Herbs/shrubs, flowers zygomorphic, bilabiate, stamens 4 (didynamous) or 2, ovary superior, axile placentation with numerous ovules.
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>122. PEDALINEAE</strong> &mdash; Sticky herbs with glandular hairs. Flowers zygomorphic, solitary. Fruit a capsule or nut with hooks or horns, axile placentation.
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #8e44ad;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #8e44ad;">
+                                            LAMIALES
+                                        </div>
+                                        <div class="order-desc">Zygomorphic, drupe/schizocarp, style terminal/gynobasic</div>
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            124. MYOPORINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            125. SELAGINEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            126. VERBENACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            127. LABIATAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>126. VERBENACEAE</strong> &mdash; Stems quadrangular, opposite leaves. Flowers zygomorphic, in spikes/cymes, style terminal, ovary 2-4 celled, drupe fruit.
+                                    </div>
+                                </div>
+                                <div class="order-row" style="border-left: 3px solid #7f8c8d;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #7f8c8d;">
+                                            INCERTAE SEDIS
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            128. PLANTAGINEAE
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
- 
                 <!-- MONOCHLAMYDEAE CARD -->
-                <div class="subclass-card">
+                <div class="subclass-card" style="border-color: var(--color-monochlamy);">
                     <div class="subclass-header" style="background-color: var(--color-monochlamy);">
                         MONOCHLAMYDEAE
-                        <div class="top-level-desc" style="font-size: 8.5px;">Only one non-essential whorl or absent</div>
+                        <div class="top-level-desc" style="font-size: 8px;">Perianth simple (single whorl) or absent</div>
                     </div>
- 
+                    
                     <div class="subclass-body">
-                        <!-- CURVEMBRYAE -->
+                        <!-- SERIES CURVEMBRYAE -->
                         <div class="series-block bg-curve">
                             <div class="series-left"><div class="series-title-vertical">CURVEMBRYAE</div></div>
                             <div class="series-content">
-                                <div class="order-row" style="border-left: 4px solid #9b59b6;">
-                                    <div class="order-left" style="display:flex; align-items:flex-start;">
-                                        <div class="order-desc" style="margin:0;">Single ovule, embryo coiled around endosperm</div>
-                                    </div>
-                                    <div class="families-right">
-                                        <div class="family-card" style="border-left: 3px solid #9b59b6;">
-                                            <div class="family-card-title">23. NYCTAGINACEAE</div>
-                                            <div class="family-card-desc">Perianth of 3-5 tepals. Basal placentation, fruit achene/utricle.</div>
+                                <div class="order-row" style="border-left: 3px solid #9b59b6;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #9b59b6;">
+                                            CURVEMBRYAE
                                         </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge syllabus-highlight">
+                                            129. NYCTAGINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            130. ILLECEBRACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            131. AMARANTACEAE [sic]
+                                        </span>
+                                        <span class="family-badge">
+                                            132. CHENOPODIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            133. PHYTOLACCACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            134. BATIDEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            135. POLYGONACEAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>129. NYCTAGINEAE</strong> &mdash; Herbs/shrubs with opposite leaves. Flowers small, often surrounded by brightly colored bracts, perianth tubular (tepals), 1-seeded anthocarp fruit.
                                     </div>
                                 </div>
                             </div>
                         </div>
- 
-                        <div class="order-row" style="border-left: 4px solid #3498db;">
-                            <div class="order-left" style="flex: 1; border-right: none;">
-                                <div class="order-title" style="background-color: #3498db;">MULTIOVULATAE AQUATICAE</div>
-                            </div>
-                        </div>
-                        <div class="order-row" style="border-left: 4px solid #e74c3c;">
-                            <div class="order-left" style="flex: 1; border-right: none;">
-                                <div class="order-title" style="background-color: #e74c3c;">MULTIOVULATAE TERROSTRIS</div>
-                            </div>
-                        </div>
-                        <div class="order-row" style="border-left: 4px solid #2ecc71;">
-                            <div class="order-left" style="flex: 1; border-right: none;">
-                                <div class="order-title" style="background-color: #2ecc71;">MICROEMBRAE</div>
-                            </div>
-                        </div>
-                        <div class="order-row" style="border-left: 4px solid #9b59b6;">
-                            <div class="order-left" style="flex: 1; border-right: none;">
-                                <div class="order-title" style="background-color: #9b59b6;">DAPHNALES</div>
-                            </div>
-                        </div>
-                        <div class="order-row" style="border-left: 4px solid #e67e22;">
-                            <div class="order-left" style="flex: 1; border-right: none;">
-                                <div class="order-title" style="background-color: #e67e22;">ACHLAMYDOSPOREAE</div>
-                            </div>
-                        </div>
-                        
-                        <!-- UNISEXUALES -->
-                        <div class="series-block">
-                            <div class="series-left" style="background-color:#fcf3cf;"><div class="series-title-vertical">UNISEXUALES</div></div>
+                        <!-- SERIES MULTIOVULATAE AQUATICAE -->
+                        <div class="series-block ">
+                            <div class="series-left"><div class="series-title-vertical">MULTIOVULATAE AQUATICAE</div></div>
                             <div class="series-content">
-                                <div class="order-row" style="border-left: 4px solid #f1c40f;">
-                                    <div class="families-right" style="padding-left: 0;">
-                                        <div class="family-card" style="border-left: 3px solid #f1c40f;">
-                                            <div class="family-card-title">24. EUPHORBIACEAE</div>
-                                            <div class="family-card-desc">Milky sap. Unisexual, apetalous. 3-loculed ovary.</div>
+                                <div class="order-row" style="border-left: 3px solid #3498db;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #3498db;">
+                                            MULTIOVULATAE AQUATICAE
                                         </div>
-                                        <div class="family-card" style="border-left: 3px solid #f1c40f;">
-                                            <div class="family-card-title">25. URTICACEAE</div>
-                                            <div class="family-card-desc">Stinging hairs. Perianth 4-5 lobed, fruit achene or drupe.</div>
-                                        </div>
-                                        <div class="family-card" style="border-left: 3px solid #f1c40f;">
-                                            <div class="family-card-title">26. CASUARINACEAE</div>
-                                            <div class="family-card-desc">Whorled branchlets like pine needles. Woody cone fruit.</div>
-                                        </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            136. PODOSTEMONACEAE
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="order-row" style="border-left: 4px solid #34495e;">
-                            <div class="order-left" style="flex: 1; border-right: none;">
-                                <div class="order-title" style="background-color: #34495e;">ORDINES ANOMALI</div>
+                        <!-- SERIES MULTIOVULATAE TERROSTRIS -->
+                        <div class="series-block ">
+                            <div class="series-left"><div class="series-title-vertical">MULTIOVULATAE TERROSTRIS</div></div>
+                            <div class="series-content">
+                                <div class="order-row" style="border-left: 3px solid #e74c3c;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #e74c3c;">
+                                            MULTIOVULATAE TERROSTRIS
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            137. NEPENTHACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            138. CYTINACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            139. ARISTOLOCHIACEAE
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SERIES MICROEMBRAE -->
+                        <div class="series-block ">
+                            <div class="series-left"><div class="series-title-vertical">MICROEMBRAE</div></div>
+                            <div class="series-content">
+                                <div class="order-row" style="border-left: 3px solid #2ecc71;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #2ecc71;">
+                                            MICROEMBRAE
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            140. PIPERACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            141. CHLORANTACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            142. MYRISTICEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            143. MONIMIACEAE
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SERIES DAPHNALES -->
+                        <div class="series-block ">
+                            <div class="series-left"><div class="series-title-vertical">DAPHNALES</div></div>
+                            <div class="series-content">
+                                <div class="order-row" style="border-left: 3px solid #9b59b6;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #9b59b6;">
+                                            DAPHNALES
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            144. LAURINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            145. PROTEACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            146. THYMELAEACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            147. PENAEACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            148. ELAEAGNACEAE
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SERIES ACHLAMYDOSPOREAE -->
+                        <div class="series-block ">
+                            <div class="series-left"><div class="series-title-vertical">ACHLAMYDOSPOREAE</div></div>
+                            <div class="series-content">
+                                <div class="order-row" style="border-left: 3px solid #e67e22;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #e67e22;">
+                                            ACHLAMYDOSPOREAE
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            149. LORANTHACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            150. SANTALACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            151. BALANOPHOREAE
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SERIES UNISEXUALES -->
+                        <div class="series-block ">
+                            <div class="series-left"><div class="series-title-vertical">UNISEXUALES</div></div>
+                            <div class="series-content">
+                                <div class="order-row" style="border-left: 3px solid #f1c40f;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #f1c40f;">
+                                            UNISEXUALES
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge syllabus-highlight">
+                                            152. EUPHORBIACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            153. BALANOPEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            154. URTICACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            155. PLATANACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            156. LEITNERIEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            157. JUGLANDEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            158. MYRICACEAE
+                                        </span>
+                                        <span class="family-badge syllabus-highlight">
+                                            159. CASUARINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            160. CUPULIFERAE
+                                        </span>
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>152. EUPHORBIACEAE</strong> &mdash; Plants with milky latex, flowers unisexual, perianth reduced or absent. Tricarpellate syncarpous ovary, schizocarpic regma fruit.
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>154. URTICACEAE</strong> &mdash; Herbs/shrubs with stinging hairs or cystoliths. Flowers tiny, unisexual, green. Stamens infolded in bud, ovary unilocular.
+                                    </div>
+                                    <div class="syllabus-details-box">
+                                        <strong>159. CASUARINEAE</strong> &mdash; Jointed xerophytic trees with scale leaves. Flowers unisexual, males in spikes, females in heads forming a woody cone-like infructescence.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SERIES ORDINES ANOMALI -->
+                        <div class="series-block ">
+                            <div class="series-left"><div class="series-title-vertical">ORDINES ANOMALI</div></div>
+                            <div class="series-content">
+                                <div class="order-row" style="border-left: 3px solid #34495e;">
+                                    <div class="order-header-row">
+                                        <div class="order-title" style="background-color: #34495e;">
+                                            ORDINES ANOMALI
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="families-flex-container">
+                                        <span class="family-badge">
+                                            161. SALICINEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            162. LACISTEMACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            163. EMPETRACEAE
+                                        </span>
+                                        <span class="family-badge">
+                                            164. CERATOPHYLLEAE
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
- 
         <!-- GYMNOSPERMS CARD -->
         <div class="top-level-card" style="border-top: 4px solid var(--color-gymno);">
             <div class="top-level-header" style="background-color: var(--color-gymno);">
                 GYMNOSPERMS
-                <div class="top-level-desc">Naked seeded Plants without Vessels</div>
+                <div class="top-level-desc">Naked seeded plants, vessels absent in xylem, cones present</div>
             </div>
+            
             <div class="gymno-content">
-                <div class="gymno-card" style="border-left-color: #3498db;">
-                    <div class="gymno-title" style="background-color: #3498db;">Gnetales</div>
-                    <div class="gymno-desc">No vessel elements in their wood. Compound cones with fleshy seeds.</div>
+                <div class="gymno-card" style="border-left: 3px solid #3498db;">
+                    <div class="gymno-title" style="background-color: #3498db;">
+                        165. GNETACEAE
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #3498db; margin-top:3px; background-color:#fcfcfc;">Vessels present in xylem. Leaves opposite, broad or scale-like. Cones compound with outer envelope.</div>
                 </div>
-                <div class="gymno-card" style="border-left-color: #2ecc71;">
-                    <div class="gymno-title" style="background-color: #2ecc71;">Coniferales (Conifers)</div>
-                    <div class="gymno-desc">Cone-bearing nature and their needle-like or scale-like leaves.</div>
+                <div class="gymno-card" style="border-left: 3px solid #2ecc71;">
+                    <div class="gymno-title" style="background-color: #2ecc71;">
+                        166. CONIFERAE
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #2ecc71; margin-top:3px; background-color:#fcfcfc;">Wood without vessels, resin ducts present. Needles/scale leaves. Unisexual cones, seeds winged or fleshy.</div>
                 </div>
-                <div class="gymno-card" style="border-left-color: #e74c3c;">
-                    <div class="gymno-title" style="background-color: #e74c3c;">Cycadales (Cycads)</div>
-                    <div class="gymno-desc">Produce conspicuously large cones front like leaves.</div>
+                <div class="gymno-card" style="border-left: 3px solid #e74c3c;">
+                    <div class="gymno-title" style="background-color: #e74c3c;">
+                        167. CYCADACEAE
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #e74c3c; margin-top:3px; background-color:#fcfcfc;">Wood without vessels. Palm-like unbranched trunk, pinnate compound leaves. Large terminal cones.</div>
                 </div>
             </div>
         </div>
- 
         <!-- MONOCOTYLEDONS CARD -->
         <div class="top-level-card" style="border-top: 4px solid var(--color-mono);">
             <div class="top-level-header" style="background-color: var(--color-mono);">
                 MONOCOTYLEDONS
-                <div class="top-level-desc">One cotyledon, closed vascular bundles, parallel venation, trimerous flowers</div>
+                <div class="top-level-desc">One cotyledon, parallel venation, trimerous flowers, scattered vascular bundles</div>
             </div>
+            
             <div class="mono-content">
-                <!-- MICROSPERMAE -->
-                <div class="mono-series-card" style="border-left: 4px solid #d35400;">
-                    <div class="mono-left" style="background-color: var(--color-hetero-bg);">
-                        <div class="mono-left-title" style="background-color: #d35400;">MICROSPERMAE</div>
-                        <div class="order-desc" style="margin-top: 3px;">Inferior ovary; minute seeds</div>
-                    </div>
-                    <div class="mono-right">
-                        <div class="family-card" style="border-left: 3px solid #d35400;">
-                            <div class="family-card-title">27. ORCHIDACEAE</div>
-                            <div class="family-card-desc">Perennial epiphytic herbs. 3-petaled zygomorphic flowers. Pollinia.</div>
+                <!-- SERIES MICROSPERMAE -->
+                <div class="mono-series-card" style="border-left: 3px solid #d35400;">
+                    <div class="mono-series-header">
+                        <div class="mono-left-title" style="background-color: #d35400;">
+                            MICROSPERMAE
                         </div>
+                        <div class="mono-series-desc">Inferior ovary, tiny seeds</div>
+                    </div>
+                    <div class="families-flex-container">
+                        <span class="family-badge">
+                            168. HYDROCHARIDEAE
+                        </span>
+                        <span class="family-badge">
+                            169. BURMANNIACEAE
+                        </span>
+                        <span class="family-badge syllabus-highlight">
+                            170. ORCHIDEAE
+                        </span>
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #d35400;">
+                        <strong>170. ORCHIDEAE</strong> &mdash; Epiphytic/terrestrial herbs. Flowers zygomorphic, resupinate, perianth 6 (lip/labellum present). Pollinia, column (gynostemium).
                     </div>
                 </div>
-                
-                <!-- EPIGYNAE -->
-                <div class="mono-series-card" style="border-left: 4px solid #e67e22;">
-                    <div class="mono-left" style="background-color: var(--color-mono-bg1);">
-                        <div class="mono-left-title" style="background-color: #e67e22;">EPIGYNAE</div>
-                        <div class="order-desc" style="margin-top: 3px;">Inferior ovary; large seeds with copious endosperm</div>
+                <!-- SERIES EPIGYNAE -->
+                <div class="mono-series-card" style="border-left: 3px solid #e67e22;">
+                    <div class="mono-series-header">
+                        <div class="mono-left-title" style="background-color: #e67e22;">
+                            EPIGYNAE
+                        </div>
+                        <div class="mono-series-desc">Inferior ovary, large endospermic seeds</div>
                     </div>
-                    <div class="mono-right">
-                        <div class="family-card" style="border-left: 3px solid #e67e22;">
-                            <div class="family-card-title">28. ZINGIBERACEAE</div>
-                            <div class="family-card-desc">Aromatic rhizomes, distichous leaves, spike inflorescence.</div>
-                        </div>
-                        <div class="family-card" style="border-left: 3px solid #e67e22;">
-                            <div class="family-card-title">29. AMARYLLIDACEAE</div>
-                            <div class="family-card-desc">Bulbous herbs, actinomorphic, inferior ovary.</div>
-                        </div>
+                    <div class="families-flex-container">
+                        <span class="family-badge syllabus-highlight">
+                            171. SCITAMINEAE
+                        </span>
+                        <span class="family-badge">
+                            172. BROMELIACEAE
+                        </span>
+                        <span class="family-badge">
+                            173. HAEMODORACEAE
+                        </span>
+                        <span class="family-badge">
+                            174. IIRIDEAE
+                        </span>
+                        <span class="family-badge syllabus-highlight">
+                            175. AMARYLLIDEAE
+                        </span>
+                        <span class="family-badge">
+                            176. TACCACEAE
+                        </span>
+                        <span class="family-badge">
+                            177. DIOSCOREACEAE
+                        </span>
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #e67e22;">
+                        <strong>171. SCITAMINEAE</strong> &mdash; Aromatic rhizomatous herbs. Flowers zygomorphic, 1 fertile stamen (Zingiberaceae) or staminodes forming petaloid structures, inferior ovary.
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #e67e22;">
+                        <strong>175. AMARYLLIDEAE</strong> &mdash; Perennial bulbous herbs. Scapose inflorescence with spathe. Flowers regular, 6 tepals, 6 stamens, inferior ovary.
                     </div>
                 </div>
- 
-                <!-- CORONARIAE -->
-                <div class="mono-series-card" style="border-left: 4px solid #f39c12;">
-                    <div class="mono-left" style="background-color: #d5f5e3;">
-                        <div class="mono-left-title" style="background-color: #f39c12;">CORONARIAE</div>
-                        <div class="order-desc" style="margin-top: 3px;">Perianth petaloid; superior ovary</div>
+                <!-- SERIES CORONARIAE -->
+                <div class="mono-series-card" style="border-left: 3px solid #f39c12;">
+                    <div class="mono-series-header">
+                        <div class="mono-left-title" style="background-color: #f39c12;">
+                            CORONARIAE
+                        </div>
+                        <div class="mono-series-desc">Petaloid perianth, superior ovary</div>
                     </div>
-                    <div class="mono-right">
-                        <div class="family-card" style="border-left: 3px solid #f39c12;">
-                            <div class="family-card-title">30. LILIACEAE</div>
-                            <div class="family-card-desc">Bulbs/corms, parallel-veined leaves, actinomorphic flowers.</div>
-                        </div>
-                        <div class="family-card" style="border-left: 3px solid #f39c12;">
-                            <div class="family-card-title">31. COMMELINACEAE</div>
-                            <div class="family-card-desc">Flattened leaf sheaths, zygomorphic (2 large, 3 small petals).</div>
-                        </div>
+                    <div class="families-flex-container">
+                        <span class="family-badge">
+                            178. ROXBURGHIACEAE
+                        </span>
+                        <span class="family-badge syllabus-highlight">
+                            179. LILIACEAE
+                        </span>
+                        <span class="family-badge">
+                            180. PONTEDERIACEAE
+                        </span>
+                        <span class="family-badge">
+                            181. PHILYDRACEAE
+                        </span>
+                        <span class="family-badge">
+                            182. XYRIDEAE
+                        </span>
+                        <span class="family-badge">
+                            183. MAYACEAE
+                        </span>
+                        <span class="family-badge syllabus-highlight">
+                            184. COMMELINACEAE
+                        </span>
+                        <span class="family-badge">
+                            185. RAPATEACEAE
+                        </span>
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #f39c12;">
+                        <strong>179. LILIACEAE</strong> &mdash; Bulbous/cormous herbs. Flowers regular, trimerous, 6 tepals (perianth), 6 stamens, ovary superior, axile placentation.
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #f39c12;">
+                        <strong>184. COMMELINACEAE</strong> &mdash; Herbs with succulent stems and closed leaf sheaths. Flowers trimerous, sepals and petals distinct, stamens often with hairy filaments.
                     </div>
                 </div>
- 
-                <div class="mono-series-card" style="border-left: 4px solid #8e44ad;">
-                    <div class="mono-left" style="background-color: #fdfdfd; flex: 1; border-right: none;">
-                        <div class="mono-left-title" style="background-color: #8e44ad;">CALYCINAE</div>
+                <!-- SERIES CALYCINAE -->
+                <div class="mono-series-card" style="border-left: 3px solid #8e44ad;">
+                    <div class="mono-series-header">
+                        <div class="mono-left-title" style="background-color: #8e44ad;">
+                            CALYCINAE
+                        </div>
+                        <div class="mono-series-desc">Sepaloid perianth, superior ovary</div>
+                    </div>
+                    <div class="families-flex-container">
+                        <span class="family-badge">
+                            186. FLAGELLARIEAE
+                        </span>
+                        <span class="family-badge">
+                            187. JUNCACEAE
+                        </span>
+                        <span class="family-badge">
+                            188. PALMAE
+                        </span>
                     </div>
                 </div>
- 
-                <!-- NUDIFLORAE -->
-                <div class="mono-series-card" style="border-left: 4px solid #c0392b;">
-                    <div class="mono-left" style="background-color: var(--color-curve-bg);">
-                        <div class="mono-left-title" style="background-color: #c0392b;">NUDIFLORAE</div>
-                        <div class="order-desc" style="margin-top: 3px;">Perianth absent or minute scales</div>
-                    </div>
-                    <div class="mono-right">
-                        <div class="family-card" style="border-left: 3px solid #c0392b;">
-                            <div class="family-card-title">32. ARACEAE</div>
-                            <div class="family-card-desc">Spadix inflorescence, simple leaves, unisexual flowers.</div>
+                <!-- SERIES NUDIFLORAE -->
+                <div class="mono-series-card" style="border-left: 3px solid #c0392b;">
+                    <div class="mono-series-header">
+                        <div class="mono-left-title" style="background-color: #c0392b;">
+                            NUDIFLORAE
                         </div>
+                        <div class="mono-series-desc">Apetalous, spadix common</div>
+                    </div>
+                    <div class="families-flex-container">
+                        <span class="family-badge">
+                            189. PANDANEAE
+                        </span>
+                        <span class="family-badge">
+                            190. CYCLANTHACEAE
+                        </span>
+                        <span class="family-badge">
+                            191. TYPHACEAE
+                        </span>
+                        <span class="family-badge syllabus-highlight">
+                            192. AROIDEAE
+                        </span>
+                        <span class="family-badge">
+                            193. LEMNACEAE
+                        </span>
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #c0392b;">
+                        <strong>192. AROIDEAE</strong> &mdash; Tuberous herbs, leaves broad. Inflorescence spadix enclosed by a large, often colored spathe. Flowers unisexual or bisexual.
                     </div>
                 </div>
- 
-                <div class="mono-series-card" style="border-left: 4px solid #2980b9;">
-                    <div class="mono-left" style="background-color: #fdfdfd; flex: 1; border-right: none;">
-                        <div class="mono-left-title" style="background-color: #2980b9;">APOCARPAE</div>
+                <!-- SERIES APOCARPAE -->
+                <div class="mono-series-card" style="border-left: 3px solid #2980b9;">
+                    <div class="mono-series-header">
+                        <div class="mono-left-title" style="background-color: #2980b9;">
+                            APOCARPAE
+                        </div>
+                        <div class="mono-series-desc">Superior apocarpous ovary</div>
+                    </div>
+                    <div class="families-flex-container">
+                        <span class="family-badge">
+                            194. TRIURIDEAE
+                        </span>
+                        <span class="family-badge">
+                            195. ALISMACEAE
+                        </span>
+                        <span class="family-badge">
+                            196. NAIADACEAE
+                        </span>
                     </div>
                 </div>
- 
-                <!-- GLUMACEAE -->
-                <div class="mono-series-card" style="border-left: 4px solid #f1c40f;">
-                    <div class="mono-left" style="background-color: #fcf3cf;">
-                        <div class="mono-left-title" style="background-color: #f1c40f; color: #333;">GLUMACEAE</div>
-                        <div class="order-desc" style="margin-top: 3px;">Scaly/glumaceous perianth; one-ovuled ovary</div>
+                <!-- SERIES GLUMACEAE -->
+                <div class="mono-series-card" style="border-left: 3px solid #f1c40f;">
+                    <div class="mono-series-header">
+                        <div class="mono-left-title" style="background-color: #f1c40f;">
+                            GLUMACEAE
+                        </div>
+                        <div class="mono-series-desc">Flowers enclosed in glumes (scaly bracts)</div>
                     </div>
-                    <div class="mono-right">
-                        <div class="family-card" style="border-left: 3px solid #f1c40f;">
-                            <div class="family-card-title">33. CYPERACEAE</div>
-                            <div class="family-card-desc">Grass-like, solid stems, 3-ranked leaves, spikelets.</div>
-                        </div>
-                        <div class="family-card" style="border-left: 3px solid #f1c40f;">
-                            <div class="family-card-title">34. GRAMINEAE</div>
-                            <div class="family-card-desc">Hollow stems, 2-ranked leaves, caryopsis fruit.</div>
-                        </div>
+                    <div class="families-flex-container">
+                        <span class="family-badge">
+                            197. ERIOCAULEAE
+                        </span>
+                        <span class="family-badge">
+                            198. CENTROLEPIDEAE
+                        </span>
+                        <span class="family-badge">
+                            199. RESTIACEAE
+                        </span>
+                        <span class="family-badge syllabus-highlight">
+                            200. CYPERACEAE
+                        </span>
+                        <span class="family-badge syllabus-highlight">
+                            201. GRAMINEAE
+                        </span>
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #f1c40f;">
+                        <strong>200. CYPERACEAE</strong> &mdash; Sedges with 3-angled solid stems, 3-ranked leaves with closed sheaths. Flowers in spikelets, perianth reduced to bristles, fruit an achene.
+                    </div>
+                    <div class="syllabus-details-box" style="border-left-color: #f1c40f;">
+                        <strong>201. GRAMINEAE</strong> &mdash; Grasses with round hollow stems (culms), 2-ranked leaves with open sheaths and ligules. Inflorescence spikelet, fruit caryopsis.
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: #2c3e50; color: white; border-top: 2px solid #1a252f;">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: #2f3542; color: white; border-top: 2px solid #747d8c;">
         <div style="font-size: 10px; opacity: 0.8;">
-            Prepared by
+            Total Families: 201 (Complete Bentham &amp; Hooker System)
         </div>
-        <div style="text-align: right; font-size: 11px; font-weight: bold;">
-            Dr. Suresh V, Department of Botany, Government Victoria College, Palakkad, Kerala
+        <div style="text-align: right; font-size: 11px; font-weight: bold; color: #f1c40f;">
+            Prepared by: Dr. Suresh V, Department of Botany, Government Victoria College, Palakkad, Kerala
         </div>
     </div>
 </div>
