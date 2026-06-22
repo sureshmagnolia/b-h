@@ -1,0 +1,978 @@
+{
+  "name": "Plantae",
+  "children": [
+    {
+      "name": "Phenerogams",
+      "children": [
+        {
+          "name": "Dicotyledonae",
+          "children": [
+            {
+              "name": "Polypetalae",
+              "children": [
+                {
+                  "name": "Thalamiflorae",
+                  "children": [
+                    {
+                      "name": "Ranales",
+                      "children": [
+                        {
+                          "name": "RANUNCULACEAE"
+                        },
+                        {
+                          "name": "DILLENIACEAE"
+                        },
+                        {
+                          "name": "CALYCANTHACEAE"
+                        },
+                        {
+                          "name": "MAGNOLIACEAE"
+                        },
+                        {
+                          "name": "ANONACEAE"
+                        },
+                        {
+                          "name": "MENISPERMACEAE"
+                        },
+                        {
+                          "name": "BERBERIDACEAE"
+                        },
+                        {
+                          "name": "NYMPHAEACEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Parietales",
+                      "children": [
+                        {
+                          "name": "SARRACENIACEAE"
+                        },
+                        {
+                          "name": "PAPAVERACEAE"
+                        },
+                        {
+                          "name": "CRUCIFERAE"
+                        },
+                        {
+                          "name": "CAPPARIDEAE"
+                        },
+                        {
+                          "name": "RESEDACEAE"
+                        },
+                        {
+                          "name": "CISTINEAE"
+                        },
+                        {
+                          "name": "VIOLARIEAE"
+                        },
+                        {
+                          "name": "CANELLACEAE"
+                        },
+                        {
+                          "name": "BIXINEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Polygalyneae",
+                      "children": [
+                        {
+                          "name": "PITTOSPOREAE"
+                        },
+                        {
+                          "name": "TREMANDREAE"
+                        },
+                        {
+                          "name": "POLYGALAE"
+                        },
+                        {
+                          "name": "VOCHYSIACEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Caryophylliniae",
+                      "children": [
+                        {
+                          "name": "FRANKENIACEAE"
+                        },
+                        {
+                          "name": "CARYOPHYLLEAE"
+                        },
+                        {
+                          "name": "PORTULACEAE"
+                        },
+                        {
+                          "name": "TAMARISCINEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Guttiferales",
+                      "children": [
+                        {
+                          "name": "ELATINEAE"
+                        },
+                        {
+                          "name": "HYPERICINEAE"
+                        },
+                        {
+                          "name": "GUTTIFERAE"
+                        },
+                        {
+                          "name": "TERNSTROEMIACEAE"
+                        },
+                        {
+                          "name": "DIPTEROCARPEAE"
+                        },
+                        {
+                          "name": "CHLENACEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Malvales",
+                      "children": [
+                        {
+                          "name": "MALVACEAE"
+                        },
+                        {
+                          "name": "STERCULIACEAE"
+                        },
+                        {
+                          "name": "TILIACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Disciflorae",
+                  "children": [
+                    {
+                      "name": "Geraniales",
+                      "children": [
+                        {
+                          "name": "LINEAE"
+                        },
+                        {
+                          "name": "HUMIRIACEAE"
+                        },
+                        {
+                          "name": "MALPIGHIACEAE"
+                        },
+                        {
+                          "name": "ZYGOPHYLLEAE"
+                        },
+                        {
+                          "name": "GERANIACEAE"
+                        },
+                        {
+                          "name": "RUTACEAE"
+                        },
+                        {
+                          "name": "SIMARUBEAE"
+                        },
+                        {
+                          "name": "OCHNACEAE"
+                        },
+                        {
+                          "name": "BURSERACEAE"
+                        },
+                        {
+                          "name": "MELIACEAE"
+                        },
+                        {
+                          "name": "CHAILLETIACEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Olacales",
+                      "children": [
+                        {
+                          "name": "OLACINEAE"
+                        },
+                        {
+                          "name": "ILICINEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Celestrales",
+                      "children": [
+                        {
+                          "name": "CELASTRINEAE"
+                        },
+                        {
+                          "name": "STACKHOUSIEAE"
+                        },
+                        {
+                          "name": "RHAMNEAE"
+                        },
+                        {
+                          "name": "AMPELIDEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Sapindales",
+                      "children": [
+                        {
+                          "name": "SAPINDACEAE"
+                        },
+                        {
+                          "name": "SABIACEAE"
+                        },
+                        {
+                          "name": "ANACARDIACEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "POTIUS GENERA ANOMALA",
+                      "children": [
+                        {
+                          "name": "CORIARIEAE"
+                        },
+                        {
+                          "name": "MORINGEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Calyciflorae",
+                  "children": [
+                    {
+                      "name": "Rosales",
+                      "children": [
+                        {
+                          "name": "CONNARACEAE"
+                        },
+                        {
+                          "name": "LEGUMINOSAE"
+                        },
+                        {
+                          "name": "ROSACEAE"
+                        },
+                        {
+                          "name": "SAXIFRAGEAE"
+                        },
+                        {
+                          "name": "CRASSULACEAE"
+                        },
+                        {
+                          "name": "DROSERACEAE"
+                        },
+                        {
+                          "name": "HAMAMELIDEAE"
+                        },
+                        {
+                          "name": "BRUNIACEAE"
+                        },
+                        {
+                          "name": "HALORAGEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Myrtales",
+                      "children": [
+                        {
+                          "name": "RHIZOPHOREAE"
+                        },
+                        {
+                          "name": "COMBRETACEAE"
+                        },
+                        {
+                          "name": "MYRTACEAE"
+                        },
+                        {
+                          "name": "MELASTOMACEAE"
+                        },
+                        {
+                          "name": "LYTHRARIEAE"
+                        },
+                        {
+                          "name": "ONAGRARIEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Passiflorales",
+                      "children": [
+                        {
+                          "name": "SAMYDACEAE"
+                        },
+                        {
+                          "name": "LOASEAE"
+                        },
+                        {
+                          "name": "TURNERACEAE"
+                        },
+                        {
+                          "name": "PASSIFLOREAE"
+                        },
+                        {
+                          "name": "CUCURBITACEAE"
+                        },
+                        {
+                          "name": "BEGONIACEAE"
+                        },
+                        {
+                          "name": "DATISCEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Ficoidales",
+                      "children": [
+                        {
+                          "name": "CACTEAE"
+                        },
+                        {
+                          "name": "FICIOIDEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Umbellales",
+                      "children": [
+                        {
+                          "name": "UMBELLIFERAE"
+                        },
+                        {
+                          "name": "ARALIACEAE"
+                        },
+                        {
+                          "name": "CORNACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Gamopetalae",
+              "children": [
+                {
+                  "name": "Inferae",
+                  "children": [
+                    {
+                      "name": "Rubiales",
+                      "children": [
+                        {
+                          "name": "CAPRIFOLIACEAE"
+                        },
+                        {
+                          "name": "RUBIACEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Asterales",
+                      "children": [
+                        {
+                          "name": "VALERIANEAE"
+                        },
+                        {
+                          "name": "DIPSACEAE"
+                        },
+                        {
+                          "name": "CALCEREAE"
+                        },
+                        {
+                          "name": "COMPOSITAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Companales",
+                      "children": [
+                        {
+                          "name": "STYLIDIEAE"
+                        },
+                        {
+                          "name": "GOODENOVIEAE"
+                        },
+                        {
+                          "name": "CAMPANULACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Heteromerae",
+                  "children": [
+                    {
+                      "name": "Ericales",
+                      "children": [
+                        {
+                          "name": "VACCINIACEAE"
+                        },
+                        {
+                          "name": "ERICACEAE"
+                        },
+                        {
+                          "name": "MONOTROPEAE"
+                        },
+                        {
+                          "name": "EPACRIDEAE"
+                        },
+                        {
+                          "name": "DIAPENSIACEAE"
+                        },
+                        {
+                          "name": "LENNOACEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Primulales",
+                      "children": [
+                        {
+                          "name": "PLUMBAGINEAE"
+                        },
+                        {
+                          "name": "PRIMULACEAE"
+                        },
+                        {
+                          "name": "MYRSINEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Ebenales",
+                      "children": [
+                        {
+                          "name": "SAPOTACEAE"
+                        },
+                        {
+                          "name": "EBENACEAE"
+                        },
+                        {
+                          "name": "STYRACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Bicarpellatae",
+                  "children": [
+                    {
+                      "name": "Gentianales",
+                      "children": [
+                        {
+                          "name": "OLEACEAE"
+                        },
+                        {
+                          "name": "SALVADORACEAE"
+                        },
+                        {
+                          "name": "APOCYNACEAE"
+                        },
+                        {
+                          "name": "ASCLEPIADEAE"
+                        },
+                        {
+                          "name": "LOGANIACEAE"
+                        },
+                        {
+                          "name": "GENTIANEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Polemoneales",
+                      "children": [
+                        {
+                          "name": "POLEMONIACEAE"
+                        },
+                        {
+                          "name": "HYDROPHYLLACEAE"
+                        },
+                        {
+                          "name": "BORAGINEAE"
+                        },
+                        {
+                          "name": "CONVOLVULACEAE"
+                        },
+                        {
+                          "name": "SOLANACEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Personales",
+                      "children": [
+                        {
+                          "name": "SCROPHULARINEAE"
+                        },
+                        {
+                          "name": "OROBRANCHACEAE"
+                        },
+                        {
+                          "name": "LENTIBULARIEAE"
+                        },
+                        {
+                          "name": "COLUMELLIACEAE"
+                        },
+                        {
+                          "name": "GESNERACEAE"
+                        },
+                        {
+                          "name": "BIGNONIACEAE"
+                        },
+                        {
+                          "name": "PEDALINEAE"
+                        },
+                        {
+                          "name": "ACANTHACEAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Lamiales",
+                      "children": [
+                        {
+                          "name": "MYOPORINEAE"
+                        },
+                        {
+                          "name": "SELAGINEAE"
+                        },
+                        {
+                          "name": "VERBENACEAE"
+                        },
+                        {
+                          "name": "LABIATAE"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Incertae sedis",
+                      "children": [
+                        {
+                          "name": "PLANTAGINEAE"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Monochlamydeae",
+              "children": [
+                {
+                  "name": "Curvembryae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "NYCTAGINEAE"
+                        },
+                        {
+                          "name": "ILLECEBRACEAE"
+                        },
+                        {
+                          "name": "AMARANTACEAE [sic]"
+                        },
+                        {
+                          "name": "CHENOPODIACEAE"
+                        },
+                        {
+                          "name": "PHYTOLACCACEAE"
+                        },
+                        {
+                          "name": "BATIDEAE"
+                        },
+                        {
+                          "name": "POLYGONACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Multiovulatae Aquaticae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "PODOSTEMONACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Multiovulatae terrostris",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "NEPENTHACEAE"
+                        },
+                        {
+                          "name": "CYTINACEAE"
+                        },
+                        {
+                          "name": "ARISTOLOCHIACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Microembrae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "PIPERACEAE"
+                        },
+                        {
+                          "name": "CHLORANTACEAE"
+                        },
+                        {
+                          "name": "MYRISTICEAE"
+                        },
+                        {
+                          "name": "MONIMIACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Daphnales",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "LAURINEAE"
+                        },
+                        {
+                          "name": "PROTEACEAE"
+                        },
+                        {
+                          "name": "THYMELAEACEAE"
+                        },
+                        {
+                          "name": "PENAEACEAE"
+                        },
+                        {
+                          "name": "ELAEAGNACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Achlamydosporeae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "LORANTHACEAE"
+                        },
+                        {
+                          "name": "SANTALACEAE"
+                        },
+                        {
+                          "name": "BALANOPHOREAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Unisexuales",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "EUPHORBIACEAE"
+                        },
+                        {
+                          "name": "BALANOPEAE"
+                        },
+                        {
+                          "name": "URTICACEAE"
+                        },
+                        {
+                          "name": "PLATANACEAE"
+                        },
+                        {
+                          "name": "LEITNERIEAE"
+                        },
+                        {
+                          "name": "JUGLANDEAE"
+                        },
+                        {
+                          "name": "MYRICACEAE"
+                        },
+                        {
+                          "name": "CASUARINEAE"
+                        },
+                        {
+                          "name": "CUPULIFERAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Ordines Anomali",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "SALICINEAE"
+                        },
+                        {
+                          "name": "LACISTEMACEAE"
+                        },
+                        {
+                          "name": "EMPETRACEAE"
+                        },
+                        {
+                          "name": "CERATOPHYLLEAE"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GYMNOSPERMEAE",
+          "children": [
+            {
+              "name": "-",
+              "children": [
+                {
+                  "name": "-",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "GNETACEAE"
+                        },
+                        {
+                          "name": "CONIFERAE"
+                        },
+                        {
+                          "name": "CYCADACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Monocotyledonae",
+          "children": [
+            {
+              "name": "-",
+              "children": [
+                {
+                  "name": "Microspermae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "HYDROCHARIDEAE"
+                        },
+                        {
+                          "name": "BURMANNIACEAE"
+                        },
+                        {
+                          "name": "ORCHIDEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Epigynae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "SCITAMINEAE"
+                        },
+                        {
+                          "name": "BROMELIACEAE"
+                        },
+                        {
+                          "name": "HAEMODORACEAE"
+                        },
+                        {
+                          "name": "IIRIDEAE"
+                        },
+                        {
+                          "name": "AMARYLLIDEAE"
+                        },
+                        {
+                          "name": "TACCACEAE"
+                        },
+                        {
+                          "name": "DIOSCOREACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Coronariae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "ROXBURGHIACEAE"
+                        },
+                        {
+                          "name": "LILIACEAE"
+                        },
+                        {
+                          "name": "PONTEDERIACEAE"
+                        },
+                        {
+                          "name": "PHILYDRACEAE"
+                        },
+                        {
+                          "name": "XYRIDEAE"
+                        },
+                        {
+                          "name": "MAYACEAE"
+                        },
+                        {
+                          "name": "COMMELINACEAE"
+                        },
+                        {
+                          "name": "RAPATEACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Calycinae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "FLAGELLARIEAE"
+                        },
+                        {
+                          "name": "JUNCACEAE"
+                        },
+                        {
+                          "name": "PALMAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Nudiflorae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "PANDANEAE"
+                        },
+                        {
+                          "name": "CYCLANTHACEAE"
+                        },
+                        {
+                          "name": "TYPHACEAE"
+                        },
+                        {
+                          "name": "AROIDEAE"
+                        },
+                        {
+                          "name": "LEMNACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Apocarpae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "TRIURIDEAE"
+                        },
+                        {
+                          "name": "ALISMACEAE"
+                        },
+                        {
+                          "name": "NAIADACEAE"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Glumaceae",
+                  "children": [
+                    {
+                      "name": "-",
+                      "children": [
+                        {
+                          "name": "ERIOCAULEAE"
+                        },
+                        {
+                          "name": "CENTROLEPIDEAE"
+                        },
+                        {
+                          "name": "RESTIACEAE"
+                        },
+                        {
+                          "name": "CYPERACEAE"
+                        },
+                        {
+                          "name": "GRAMINEAE"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
